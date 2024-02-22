@@ -1,0 +1,49 @@
+﻿.filt1 {
+    font-family: Verdana;
+    font-size: 30px;
+    color: white;
+}
+.filt2 {
+    font-family: Verdana;
+    font-size: 20px;
+    color: white;
+}
+.filt3 {
+    font-family: Verdana;
+    font-size: 15px;
+    color: white;
+}
+
+.divc1 {
+    margin-top: 1%;
+    display: flex;
+}
+
+.divc2 {
+    width: 13%;
+    border: 0px;
+    padding: 0px;
+    margin: 0px;
+}
+
+.divc3 {
+    border: 0px;
+    width: 87%;
+    padding: 0px;
+    margin: 0px;
+    margin-left: 13%;
+}
+
+.btnc1 {
+    width: 100px;
+    height: 120px;
+    font-family: Verdana;
+    font-size: 15px;
+    color: white;
+    background-color: #E1523D;
+    border: 0px;
+}
+
+    .btnc1:hover {
+        background-color: #ED8B16;
+    }

@@ -1,12 +1,5 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Master1.Master" AutoEventWireup="true" CodeBehind="default.aspx.cs" Inherits="AteneaWeb1.WebForm1" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
-    
-    <ul>
-      <li class="active"><a href="default.aspx">Inicio</a></li>
-      <li><a href="catalogo.aspx">Catalogo</a></li>
-      <li style="float: right;"><a href="Login.aspx">Iniciar sesion</a></li>
-    </ul>
-
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
 
