@@ -68,6 +68,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="catalogo.aspx" />
+    <Content Include="cotizar.aspx" />
     <Content Include="css\css1.css" />
     <Content Include="css\css2.css" />
     <Content Include="ingresoProductos.aspx" />
@@ -82,6 +83,13 @@
     </Compile>
     <Compile Include="catalogo.aspx.designer.cs">
       <DependentUpon>catalogo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="cotizar.aspx.cs">
+      <DependentUpon>cotizar.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="cotizar.aspx.designer.cs">
+      <DependentUpon>cotizar.aspx</DependentUpon>
     </Compile>
     <Compile Include="ingresoProductos.aspx.cs">
       <DependentUpon>ingresoProductos.aspx</DependentUpon>
