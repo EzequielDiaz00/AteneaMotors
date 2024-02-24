@@ -44,15 +44,4 @@
             
         </div>
     </div>
-
-    <asp:GridView ID="gridAutos" runat="server" AutoGenerateColumns="False">
-    <Columns>
-        <asp:BoundField DataField="Id" HeaderText="ID" />
-        <asp:BoundField DataField="Marca" HeaderText="Marca" />
-        <asp:BoundField DataField="Modelo" HeaderText="Modelo" />
-        <asp:BoundField DataField="Año" HeaderText="Año" />
-        <asp:BoundField DataField="Precio" HeaderText="Precio" />
-    </Columns>
-</asp:GridView>
-
 </asp:Content>
