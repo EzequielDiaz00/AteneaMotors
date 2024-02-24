@@ -1,0 +1,52 @@
+﻿.titcat {
+    background-color: ;
+    text-align: center;
+    font-family: Verdana;
+    font-size: 40px;
+    color: #C2BB00;
+}
+.txtcat1 {
+    text-align: center;
+    font-family: Verdana;
+    font-size: 40px;
+    color: #E1523D;
+}
+.txtcat2 {
+    text-align: center;
+    font-family: Verdana;
+    font-size: 25px;
+    color: #E1523D;
+}
+.divcat1 {
+    display:flex;
+    background-color: #003547;
+}
+.divcat2 {
+    margin: 0;
+    padding: 0;
+    width: 40%;
+    background-color: #003547;
+}
+.divcat3 {
+    margin: 0;
+    padding: 0;
+    width: 60%;
+    background-color: #003547;
+}
+imgcat1{
+    width: 60px;
+}
+
+.btnc2 {
+    display: flex;
+    margin-left:auto;
+    margin-right:auto;
+    font-family: Verdana;
+    font-size: 40px;
+    border: none;
+    color: white;
+    background-color: #E1523D;
+}
+    .btnc2:hover {
+        background-color: #C2BB00;
+    }

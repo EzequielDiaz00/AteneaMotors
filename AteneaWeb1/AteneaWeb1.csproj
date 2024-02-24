@@ -122,6 +122,8 @@
     <Content Include="cotizar.aspx" />
     <Content Include="css\css1.css" />
     <Content Include="css\css2.css" />
+    <Content Include="css\css3.css" />
+    <Content Include="IngresarProducto.aspx" />
     <Content Include="Web.config" />
     <Content Include="default.aspx" />
   </ItemGroup>
@@ -139,6 +141,13 @@
     </Compile>
     <Compile Include="cotizar.aspx.designer.cs">
       <DependentUpon>cotizar.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="IngresarProducto.aspx.cs">
+      <DependentUpon>IngresarProducto.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="IngresarProducto.aspx.designer.cs">
+      <DependentUpon>IngresarProducto.aspx</DependentUpon>
     </Compile>
     <Compile Include="Master1.Master.cs">
       <DependentUpon>Master1.Master</DependentUpon>

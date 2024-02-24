@@ -1,3 +1,5 @@
+C:\Users\Ezequiel\Arashi\Documentos\UGB\Ciclo I-2024\Ing_Soft\AteneaMotors\AteneaWeb1\obj\Debug\AteneaWeb1.csproj.AssemblyReference.cache
+C:\Users\Ezequiel\Arashi\Documentos\UGB\Ciclo I-2024\Ing_Soft\AteneaMotors\AteneaWeb1\obj\Debug\AteneaWeb1.csproj.CoreCompileInputs.cache
 C:\Users\Ezequiel\Arashi\Documentos\UGB\Ciclo I-2024\Ing_Soft\AteneaMotors\AteneaWeb1\bin\AteneaWeb1.dll.config
 C:\Users\Ezequiel\Arashi\Documentos\UGB\Ciclo I-2024\Ing_Soft\AteneaMotors\AteneaWeb1\bin\AteneaWeb1.dll
 C:\Users\Ezequiel\Arashi\Documentos\UGB\Ciclo I-2024\Ing_Soft\AteneaMotors\AteneaWeb1\bin\AteneaWeb1.pdb
@@ -50,19 +52,13 @@ C:\Users\Ezequiel\Arashi\Documentos\UGB\Ciclo I-2024\Ing_Soft\AteneaMotors\Atene
 C:\Users\Ezequiel\Arashi\Documentos\UGB\Ciclo I-2024\Ing_Soft\AteneaMotors\AteneaWeb1\bin\roslyn\vbc.rsp
 C:\Users\Ezequiel\Arashi\Documentos\UGB\Ciclo I-2024\Ing_Soft\AteneaMotors\AteneaWeb1\bin\roslyn\VBCSCompiler.exe
 C:\Users\Ezequiel\Arashi\Documentos\UGB\Ciclo I-2024\Ing_Soft\AteneaMotors\AteneaWeb1\bin\roslyn\VBCSCompiler.exe.config
-C:\Users\Ezequiel\Arashi\Documentos\UGB\Ciclo I-2024\Ing_Soft\AteneaMotors\AteneaWeb1\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
-C:\Users\Ezequiel\Arashi\Documentos\UGB\Ciclo I-2024\Ing_Soft\AteneaMotors\AteneaWeb1\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
-C:\Users\Ezequiel\Arashi\Documentos\UGB\Ciclo I-2024\Ing_Soft\AteneaMotors\AteneaWeb1\obj\Debug\AteneaWeb1.csproj.AssemblyReference.cache
-C:\Users\Ezequiel\Arashi\Documentos\UGB\Ciclo I-2024\Ing_Soft\AteneaMotors\AteneaWeb1\obj\Debug\AteneaWeb1.csproj.CoreCompileInputs.cache
-C:\Users\Ezequiel\Arashi\Documentos\UGB\Ciclo I-2024\Ing_Soft\AteneaMotors\AteneaWeb1\obj\Debug\AteneaWeb1.csproj.CopyComplete
-C:\Users\Ezequiel\Arashi\Documentos\UGB\Ciclo I-2024\Ing_Soft\AteneaMotors\AteneaWeb1\obj\Debug\AteneaWeb1.dll
-C:\Users\Ezequiel\Arashi\Documentos\UGB\Ciclo I-2024\Ing_Soft\AteneaMotors\AteneaWeb1\obj\Debug\AteneaWeb1.pdb
 C:\Users\Ezequiel\Arashi\Documentos\UGB\Ciclo I-2024\Ing_Soft\AteneaMotors\AteneaWeb1\bin\BouncyCastle.Cryptography.dll
 C:\Users\Ezequiel\Arashi\Documentos\UGB\Ciclo I-2024\Ing_Soft\AteneaMotors\AteneaWeb1\bin\Google.Protobuf.dll
 C:\Users\Ezequiel\Arashi\Documentos\UGB\Ciclo I-2024\Ing_Soft\AteneaMotors\AteneaWeb1\bin\K4os.Compression.LZ4.dll
 C:\Users\Ezequiel\Arashi\Documentos\UGB\Ciclo I-2024\Ing_Soft\AteneaMotors\AteneaWeb1\bin\K4os.Compression.LZ4.Streams.dll
 C:\Users\Ezequiel\Arashi\Documentos\UGB\Ciclo I-2024\Ing_Soft\AteneaMotors\AteneaWeb1\bin\K4os.Hash.xxHash.dll
 C:\Users\Ezequiel\Arashi\Documentos\UGB\Ciclo I-2024\Ing_Soft\AteneaMotors\AteneaWeb1\bin\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\Ezequiel\Arashi\Documentos\UGB\Ciclo I-2024\Ing_Soft\AteneaMotors\AteneaWeb1\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
 C:\Users\Ezequiel\Arashi\Documentos\UGB\Ciclo I-2024\Ing_Soft\AteneaMotors\AteneaWeb1\bin\MySql.Data.dll
 C:\Users\Ezequiel\Arashi\Documentos\UGB\Ciclo I-2024\Ing_Soft\AteneaMotors\AteneaWeb1\bin\System.Buffers.dll
 C:\Users\Ezequiel\Arashi\Documentos\UGB\Ciclo I-2024\Ing_Soft\AteneaMotors\AteneaWeb1\bin\System.Configuration.ConfigurationManager.dll
@@ -88,3 +84,7 @@ C:\Users\Ezequiel\Arashi\Documentos\UGB\Ciclo I-2024\Ing_Soft\AteneaMotors\Atene
 C:\Users\Ezequiel\Arashi\Documentos\UGB\Ciclo I-2024\Ing_Soft\AteneaMotors\AteneaWeb1\bin\System.Numerics.Vectors.xml
 C:\Users\Ezequiel\Arashi\Documentos\UGB\Ciclo I-2024\Ing_Soft\AteneaMotors\AteneaWeb1\bin\System.Runtime.CompilerServices.Unsafe.xml
 C:\Users\Ezequiel\Arashi\Documentos\UGB\Ciclo I-2024\Ing_Soft\AteneaMotors\AteneaWeb1\bin\System.Threading.Tasks.Extensions.xml
+C:\Users\Ezequiel\Arashi\Documentos\UGB\Ciclo I-2024\Ing_Soft\AteneaMotors\AteneaWeb1\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\Ezequiel\Arashi\Documentos\UGB\Ciclo I-2024\Ing_Soft\AteneaMotors\AteneaWeb1\obj\Debug\AteneaWeb1.csproj.CopyComplete
+C:\Users\Ezequiel\Arashi\Documentos\UGB\Ciclo I-2024\Ing_Soft\AteneaMotors\AteneaWeb1\obj\Debug\AteneaWeb1.dll
+C:\Users\Ezequiel\Arashi\Documentos\UGB\Ciclo I-2024\Ing_Soft\AteneaMotors\AteneaWeb1\obj\Debug\AteneaWeb1.pdb
