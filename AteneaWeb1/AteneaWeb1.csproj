@@ -124,7 +124,6 @@
     <Content Include="css\css2.css" />
     <Content Include="css\css3.css" />
     <Content Include="IngresarP.aspx" />
-    <Content Include="TextFile1.txt" />
     <Content Include="Web.config" />
     <Content Include="default.aspx" />
   </ItemGroup>
