@@ -97,5 +97,10 @@
       <label for="txtTelefono">Teléfono</label>
       <asp:TextBox ID="txtTelefono" runat="server" CssClass="form-control" Width="430px"></asp:TextBox>
     </div>
+
+    <div class="form-group btn-container">
+      <asp:Button ID="btnEnviar" runat="server" Text="Enviar" OnClick="Button1_Click" CssClass="btn"/>
+    </div>
+  </div>
 </asp:Content>
 
