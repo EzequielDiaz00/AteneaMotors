@@ -1,6 +1,25 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Master1.Master" AutoEventWireup="true" CodeBehind="catalogo.aspx.cs" Inherits="AteneaWeb1.catalogo" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
+    <style>
+        .btnc2 {
+            text-decoration: blink;
+            text-align: center;
+            display: flex;
+            width: 143px;
+            margin-left: auto;
+            margin-right: auto;
+            font-family: Verdana;
+            font-size: 40px;
+            border: none;
+            color: white;
+            background-color: #E1523D;
+        }
+
+        .btnc2:hover {
+            background-color: #C2BB00;
+        }
+    </style>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
 
@@ -16,6 +35,7 @@
             <br />
             <br />
             <asp:Button Style="float: right;" Class="btnc1" Text="Filtrar" runat="server" OnClick="btnFiltrar_Click" />
+            <asp:Button Style="float: right;" Class="btnc1" ID="btnReset" runat="server" Text="Limpiar" OnClick="btnReset_Click" />
             <div style="float: right;">
                 <asp:Label Class="filt2" Text="Tipo" runat="server" />
                 <asp:RadioButtonList ID="rbTipo" runat="server">
@@ -31,6 +51,7 @@
                     <asp:ListItem Class="filt3" Id="col1" Value="Rojo" Text="Rojo" runat="server" />
                     <asp:ListItem Class="filt3" Id="col2" Value="Gris" Text="Gris" runat="server" />
                     <asp:ListItem Class="filt3" Id="col3" Value="Blanco" Text="Blanco" runat="server" />
+                    <asp:ListItem Class="filt3" Id="col4" Value="Azul" Text="Azul" runat="server" />
                 </asp:RadioButtonList>
             </div>
             <div style="float: right;">
@@ -48,41 +69,22 @@
 
     <div>
         <asp:Repeater ID="rptProductos" runat="server">
-            <ItemTemplate>
-                <div class="divcat1">
-                    <div class="divcat2">
-                        <h3 class="txtcat1"><%# Eval("Nombre") %></h3>
-                        <p class="txtcat2"><%# Eval("Descripcion") %></p>
-                        <p class="txtcat2">Año: <%# Eval("Anio") %></p>
-                        <p class="txtcat2">Color: <%# Eval("Color") %></p>
-                        <br />
-                        <style>
-                            .btnc2 {
-                                text-decoration:blink;
-                                text-align: center;
-                                display: flex;
-                                width: 143px;
-                                margin-left: auto;
-                                margin-right: auto;
-                                font-family: Verdana;
-                                font-size: 40px;
-                                border: none;
-                                color: white;
-                                background-color: #E1523D;
-                            }
-
-                                .btnc2:hover {
-                                    background-color: #C2BB00;
-                                }
-                        </style>
-                        <a class="btnc2" href="cotizar.aspx">Cotizar</a>
-                    </div>
-                    <div class="divcat3">
-                        <img class="imgcat1" width="50%" src='<%# Eval("ImagenUrl") %>' alt='<%# Eval("Nombre") %>' />
-                    </div>
-                </div>
-                <hr />
-            </ItemTemplate>
-        </asp:Repeater>
+    <ItemTemplate>
+        <div class="divcat1">
+            <div class="divcat2">
+                <h3 class="txtcat1"><%# Eval("Nombre") %></h3>
+                <p class="txtcat2"><%# Eval("Descripcion") %></p>
+                <p class="txtcat2">Año: <%# Eval("Anio") %></p>
+                <p class="txtcat2">Color: <%# Eval("Color") %></p>
+                <br />
+                <a class="btnc2" href="cotizar.aspx">Cotizar</a>
+            </div>
+            <div class="divcat3">
+                <img class="imgcat1" width="50%" src='<%# Eval("ImagenUrl") %>' alt='<%# Eval("Nombre") %>' />
+            </div>
+        </div>
+        <hr />
+    </ItemTemplate>
+</asp:Repeater>
     </div>
 </asp:Content>

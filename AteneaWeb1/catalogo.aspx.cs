@@ -1,5 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Configuration;
+using System.Data;
+using System.Data.SqlClient;
 using System.Linq;
 using System.Web;
 using System.Web.UI;
@@ -28,8 +31,34 @@ namespace AteneaWeb1
 
         private void CargarProductos()
         {
-            rptProductos.DataSource = productos;
-            rptProductos.DataBind();
+            //Codido para lista de productos.
+            //rptProductos.DataSource = productos;
+            //rptProductos.DataBind();
+
+            string connectionString = "Data Source=(localdb)\\MSSQLLocalDB;Initial Catalog=AteneaMotors;Integrated Security=True";
+            string query = "SELECT Nombre, Descripcion, Anio, Color, ImagenUrl, Tipo FROM Autos";
+
+            using (SqlConnection connection = new SqlConnection(connectionString))
+            {
+                SqlCommand command = new SqlCommand(query, connection);
+                SqlDataAdapter adapter = new SqlDataAdapter(command);
+                DataTable dataTable = new DataTable();
+
+                try
+                {
+                    connection.Open();
+                    adapter.Fill(dataTable);
+
+                    // Vincular los resultados al Repeater
+                    rptProductos.DataSource = dataTable;
+                    rptProductos.DataBind();
+                }
+                catch (Exception ex)
+                {
+                    // Manejar cualquier error que ocurra durante la obtención de datos
+                    Console.WriteLine("Error: " + ex.Message);
+                }
+            }
         }
 
         protected void btnFiltrar_Click(object sender, EventArgs e)
@@ -43,6 +72,17 @@ namespace AteneaWeb1
             rptProductos.DataSource = productosFiltrados;
             rptProductos.DataBind();
         }
+        protected void btnReset_Click(object sender, EventArgs e)
+        {
+            // Aquí manejas el evento de clic del botón de reset
+            // Reseteas las selecciones de los RadioButtonList
+            rbTipo.SelectedIndex = -1;
+            rbColor.SelectedIndex = -1;
+            rbAnio.SelectedIndex = -1;
+
+            // Luego vuelves a cargar todos los productos sin filtros
+            CargarProductos();
+        }
 
         private List<Producto> FiltrarProductos(string tipo, string color, string anio)
         {
@@ -54,7 +94,6 @@ namespace AteneaWeb1
                 bool colorCoincide = string.IsNullOrEmpty(color) || producto.Color == color;
                 bool anioCoincide = string.IsNullOrEmpty(anio) || producto.Anio == anio;
 
-                // Si todos los criterios coinciden, agregar el producto a la lista de productos filtrados
                 if (tipoCoincide && colorCoincide && anioCoincide)
                 {
                     productosFiltrados.Add(producto);

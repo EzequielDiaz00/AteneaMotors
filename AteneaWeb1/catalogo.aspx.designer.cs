@@ -15,6 +15,15 @@ namespace AteneaWeb1
     {
 
         /// <summary>
+        /// Control btnReset.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button btnReset;
+
+        /// <summary>
         /// Control rbTipo.
         /// </summary>
         /// <remarks>
@@ -94,6 +103,15 @@ namespace AteneaWeb1
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
         protected global::System.Web.UI.WebControls.ListItem col3;
+
+        /// <summary>
+        /// Control col4.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.ListItem col4;
 
         /// <summary>
         /// Control rbAnio.
