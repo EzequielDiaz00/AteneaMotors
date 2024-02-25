@@ -1,0 +1,31 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Master2.master.cs" Inherits="AteneaWeb1.Master2" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <link rel="icon" type="image/x-icon" href="img1/OIG2.png">
+    <link href="css/css1.css" rel="stylesheet" />
+    <link href="css/css2.css" rel="stylesheet" />
+    <link href="css/css3.css" rel="stylesheet" />
+    <title>Atenea: Admin</title>
+
+    <ul>
+        <li class="active"><a href="default.aspx">Inicio</a></li>
+        <li><a href="catalogo.aspx">Catalogo</a></li>
+        <li style="float: right;"><a href="cotizar.aspx">Cotizar</a></li>
+    </ul>
+
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+    </form>
+</body>
+</html>

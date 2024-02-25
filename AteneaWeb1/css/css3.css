@@ -37,16 +37,3 @@ imgcat1{
     width: 60px;
 }
 
-.btnc2 {
-    display: flex;
-    margin-left:auto;
-    margin-right:auto;
-    font-family: Verdana;
-    font-size: 40px;
-    border: none;
-    color: white;
-    background-color: #E1523D;
-}
-    .btnc2:hover {
-        background-color: #C2BB00;
-    }

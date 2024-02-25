@@ -1,0 +1,39 @@
+﻿protected void Page_Load(object sender, EventArgs e)
+    {
+        if (!IsPostBack)
+        {
+            // Ejemplo de carga de datos de productos
+            CargarProductosDesdeBaseDeDatos();
+        }
+    }
+
+    private void CargarProductosDesdeBaseDeDatos()
+    {
+        // Obtener la cadena de conexión desde el archivo Web.config
+        string connectionString = ConfigurationManager.ConnectionStrings["NombreDeTuCadenaDeConexion"].ConnectionString;
+
+        // Establecer la consulta SQL para obtener los productos
+        string query = "SELECT Nombre, Descripcion, Anio, Color, ImagenUrl, Tipo FROM Productos";
+
+        using (SqlConnection connection = new SqlConnection(connectionString))
+        {
+            SqlCommand command = new SqlCommand(query, connection);
+            SqlDataAdapter adapter = new SqlDataAdapter(command);
+            DataTable dataTable = new DataTable();
+
+            try
+            {
+                connection.Open();
+                adapter.Fill(dataTable);
+
+                // Vincular los resultados al Repeater
+                rptProductos.DataSource = dataTable;
+                rptProductos.DataBind();
+            }
+            catch (Exception ex)
+            {
+                // Manejar cualquier error que ocurra durante la obtención de datos
+                Console.WriteLine("Error: " + ex.Message);
+            }
+        }
+    }

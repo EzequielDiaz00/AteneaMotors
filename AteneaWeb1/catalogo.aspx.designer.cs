@@ -15,6 +15,15 @@ namespace AteneaWeb1
     {
 
         /// <summary>
+        /// Control rbTipo.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RadioButtonList rbTipo;
+
+        /// <summary>
         /// Control car1.
         /// </summary>
         /// <remarks>
@@ -51,6 +60,15 @@ namespace AteneaWeb1
         protected global::System.Web.UI.WebControls.ListItem car4;
 
         /// <summary>
+        /// Control rbColor.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RadioButtonList rbColor;
+
+        /// <summary>
         /// Control col1.
         /// </summary>
         /// <remarks>
@@ -76,6 +94,15 @@ namespace AteneaWeb1
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
         protected global::System.Web.UI.WebControls.ListItem col3;
+
+        /// <summary>
+        /// Control rbAnio.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RadioButtonList rbAnio;
 
         /// <summary>
         /// Control an1.

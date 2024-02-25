@@ -123,7 +123,8 @@
     <Content Include="css\css1.css" />
     <Content Include="css\css2.css" />
     <Content Include="css\css3.css" />
-    <Content Include="IngresarProducto.aspx" />
+    <Content Include="IngresarP.aspx" />
+    <Content Include="TextFile1.txt" />
     <Content Include="Web.config" />
     <Content Include="default.aspx" />
   </ItemGroup>
@@ -142,12 +143,12 @@
     <Compile Include="cotizar.aspx.designer.cs">
       <DependentUpon>cotizar.aspx</DependentUpon>
     </Compile>
-    <Compile Include="IngresarProducto.aspx.cs">
-      <DependentUpon>IngresarProducto.aspx</DependentUpon>
+    <Compile Include="IngresarP.aspx.cs">
+      <DependentUpon>IngresarP.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="IngresarProducto.aspx.designer.cs">
-      <DependentUpon>IngresarProducto.aspx</DependentUpon>
+    <Compile Include="IngresarP.aspx.designer.cs">
+      <DependentUpon>IngresarP.aspx</DependentUpon>
     </Compile>
     <Compile Include="Master1.Master.cs">
       <DependentUpon>Master1.Master</DependentUpon>
@@ -155,6 +156,13 @@
     </Compile>
     <Compile Include="Master1.Master.designer.cs">
       <DependentUpon>Master1.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Master2.Master.cs">
+      <DependentUpon>Master2.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Master2.Master.designer.cs">
+      <DependentUpon>Master2.Master</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="default.aspx.cs">
@@ -167,6 +175,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Master1.Master" />
+    <Content Include="Master2.Master" />
     <None Include="packages.config" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
