@@ -3,7 +3,7 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
-    <div>
+    <div style="font-family: Verdana;font-size: 25px;color: white;">
         <label>Nombre:</label>
         <asp:TextBox ID="txtNombre" runat="server"></asp:TextBox>
         <br />

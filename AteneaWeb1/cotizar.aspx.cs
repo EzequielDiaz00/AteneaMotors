@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Configuration;
 using System.Data.SqlClient;
 using System.Web.UI;
 
@@ -13,7 +14,7 @@ namespace AteneaWeb1
 
         protected void Button1_Click(object sender, EventArgs e)
         {
-            string connectionString = "Data Source=(localdb)\\MSSQLLocalDB;Initial Catalog=AteneaMotors;Integrated Security=True"; // Reemplaza "tu_cadena_de_conexion" con la cadena de conexión correcta
+            string connectionString = ConfigurationManager.ConnectionStrings["connectionDB"].ConnectionString;
 
             string nombre = txtNombre.Text.Trim();
             string apellido = txtApellido.Text.Trim();

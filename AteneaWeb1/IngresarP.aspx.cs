@@ -13,7 +13,7 @@ namespace AteneaWeb1
 
         protected void btnAgregarProducto_Click(object sender, EventArgs e)
         {
-            string connectionString = "Data Source=(localdb)\\MSSQLLocalDB;Initial Catalog=AteneaMotors;Integrated Security=True";
+            string connectionString = ConfigurationManager.ConnectionStrings["connectionDB"].ConnectionString;
 
             string query = "INSERT INTO Autos (Nombre, Descripcion, Anio, Color, ImagenUrl, Tipo) VALUES (@Nombre, @Descripcion, @Anio, @Color, @ImagenUrl, @Tipo)";
 
