@@ -5,7 +5,6 @@
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
     <p class="tlt1">Registrarme</p>
     <br />
-    <br />
     <div class="divL1">
         <div class="divL2">
             <asp:Label CssClass="lbl1" Text="Usuario:" runat="server" Style="margin-right: 38px;"/>
@@ -31,7 +30,7 @@
             <div id="successMessage" style="display:none; background-color: #d4edda; color: #155724; padding: 10px; margin-top: 10px;" runat="server">
     El usuario ha sido creado exitosamente.
 </div>
-
+           <asp:Label ID="errorLabel" runat="server" Text="" ForeColor="Red" Visible="false"></asp:Label>
 
             <br />
             <br />

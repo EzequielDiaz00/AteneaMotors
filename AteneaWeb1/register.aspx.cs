@@ -27,10 +27,47 @@ namespace AteneaWeb1
             string usuario = txtUsuario.Text.Trim();
             string correo = txtEmail.Text.Trim();
             string contraseña = txtContraseña.Text.Trim();
+            string confirmarContraseña = txtConfirContraseña.Text.Trim();
 
             // Verificar si el correo tiene un formato válido
             if (IsValidEmail(correo))
             {
+                // Verificar si el nombre de usuario ya existe en la base de datos
+                using (SqlConnection connection = new SqlConnection(connectionString))
+                {
+                    string query = "SELECT COUNT(*) FROM DatosdeRegistrados WHERE usuario = @usuario";
+                    SqlCommand command = new SqlCommand(query, connection);
+                    command.Parameters.AddWithValue("@usuario", usuario);
+
+                    try
+                    {
+                        connection.Open();
+                        int rowsAffected = (int)command.ExecuteScalar();
+
+                        // Verificar si se encontró una coincidencia
+                        if (rowsAffected > 0)
+                        {
+                            // El nombre de usuario ya existe, mostrar un mensaje de error
+                            errorLabel.Text = "El nombre de usuario ya está en uso.";
+                            errorLabel.Visible = true;
+                            return;
+                        }
+                    }
+                    catch (Exception ex)
+                    {
+                        // Manejar cualquier excepción
+                        Response.Write("Error: " + ex.Message);
+                    }
+                }
+                // Verificar que la contraseña y la confirmación de contraseña coincidan
+                if (contraseña != confirmarContraseña)
+                {
+                    // La contraseña y la confirmación de contraseña no coinciden, mostrar un mensaje de error
+                    errorLabel.Text = "La confirmación de contraseña es incorrecta.";
+                    errorLabel.Visible = true;
+                    return;
+                }
+
                 // El correo es válido, puedes proceder con la inserción en la base de datos
                 using (SqlConnection connection = new SqlConnection(connectionString))
                 {
@@ -69,7 +106,9 @@ namespace AteneaWeb1
             else
             {
                 // El correo no es válido, mostrar mensaje de error
-                Response.Write("Correo inválido: Debe ser un correo electrónico válido.");
+                errorLabel.Text = "Correo inválido: Debe ser un correo electrónico válido.";
+                errorLabel.Visible = true;
+                return;
             }
             
         }
