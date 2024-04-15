@@ -35,7 +35,8 @@ namespace AteneaWeb1
             //rptProductos.DataSource = productos;
             //rptProductos.DataBind();
 
-            string connectionString = "Data Source=(localdb)\\MSSQLLocalDB;Initial Catalog=AteneaMotors;Integrated Security=True";
+            string connectionString = ConfigurationManager.ConnectionStrings["connectionDB"].ConnectionString;
+
             string query = "SELECT Nombre, Descripcion, Anio, Color, ImagenUrl, Tipo FROM Autos";
 
             using (SqlConnection connection = new SqlConnection(connectionString))
@@ -106,7 +107,8 @@ namespace AteneaWeb1
         {
             List<Producto> productosFiltrados = new List<Producto>();
 
-            string connectionString = "Data Source=(localdb)\\MSSQLLocalDB;Initial Catalog=AteneaMotors;Integrated Security=True";
+            string connectionString = ConfigurationManager.ConnectionStrings["connectionDB"].ConnectionString;
+
             string query = "SELECT Nombre, Descripcion, Anio, Color, ImagenUrl, Tipo FROM Autos WHERE (@Tipo IS NULL OR Tipo = @Tipo) AND (@Color IS NULL OR Color = @Color) AND (@Anio IS NULL OR Anio = @Anio)";
 
             using (SqlConnection connection = new SqlConnection(connectionString))

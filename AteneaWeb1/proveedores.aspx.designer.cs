@@ -11,62 +11,62 @@ namespace AteneaWeb1
 {
 
 
-    public partial class IngresarP
+    public partial class proveedores
     {
 
         /// <summary>
-        /// Control txtNombre.
+        /// Control AdProv1.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtNombre;
+        protected global::System.Web.UI.WebControls.TextBox AdProv1;
 
         /// <summary>
-        /// Control txtDescripcion.
+        /// Control AdProv2.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtDescripcion;
+        protected global::System.Web.UI.WebControls.TextBox AdProv2;
 
         /// <summary>
-        /// Control txtAnio.
+        /// Control AdProv3.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtAnio;
+        protected global::System.Web.UI.WebControls.TextBox AdProv3;
 
         /// <summary>
-        /// Control txtColor.
+        /// Control AdProv4.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtColor;
+        protected global::System.Web.UI.WebControls.TextBox AdProv4;
 
         /// <summary>
-        /// Control txtImagenUrl.
+        /// Control AdProv5.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtImagenUrl;
+        protected global::System.Web.UI.WebControls.TextBox AdProv5;
 
         /// <summary>
-        /// Control txtTipo.
+        /// Control AdProv6.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtTipo;
+        protected global::System.Web.UI.WebControls.TextBox AdProv6;
 
         /// <summary>
         /// Control AdProvB.
@@ -78,12 +78,12 @@ namespace AteneaWeb1
         protected global::System.Web.UI.WebControls.Button AdProvB;
 
         /// <summary>
-        /// Control rptAuto.
+        /// Control rptProv.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Repeater rptAuto;
+        protected global::System.Web.UI.WebControls.Repeater rptProv;
     }
 }

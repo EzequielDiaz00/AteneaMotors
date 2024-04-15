@@ -118,25 +118,44 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="admon.aspx" />
     <Content Include="catalogo.aspx" />
+    <Content Include="cotizaciones.aspx" />
     <Content Include="cotizar.aspx" />
     <Content Include="css\css1.css" />
     <Content Include="css\css2.css" />
     <Content Include="css\css3.css" />
     <Content Include="css\css4.css" />
+    <Content Include="css\css5.css" />
     <Content Include="IngresarP.aspx" />
     <Content Include="login.aspx" />
+    <Content Include="loginAdmon.aspx" />
+    <Content Include="proveedores.aspx" />
     <Content Include="register.aspx" />
     <Content Include="Web.config" />
     <Content Include="default.aspx" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="admon.aspx.cs">
+      <DependentUpon>admon.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admon.aspx.designer.cs">
+      <DependentUpon>admon.aspx</DependentUpon>
+    </Compile>
     <Compile Include="catalogo.aspx.cs">
       <DependentUpon>catalogo.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="catalogo.aspx.designer.cs">
       <DependentUpon>catalogo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="cotizaciones.aspx.cs">
+      <DependentUpon>cotizaciones.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="cotizaciones.aspx.designer.cs">
+      <DependentUpon>cotizaciones.aspx</DependentUpon>
     </Compile>
     <Compile Include="cotizar.aspx.cs">
       <DependentUpon>cotizar.aspx</DependentUpon>
@@ -159,6 +178,13 @@
     <Compile Include="login.aspx.designer.cs">
       <DependentUpon>login.aspx</DependentUpon>
     </Compile>
+    <Compile Include="loginAdmon.aspx.cs">
+      <DependentUpon>loginAdmon.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="loginAdmon.aspx.designer.cs">
+      <DependentUpon>loginAdmon.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Master1.Master.cs">
       <DependentUpon>Master1.Master</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -180,6 +206,13 @@
     </Compile>
     <Compile Include="default.aspx.designer.cs">
       <DependentUpon>default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="proveedores.aspx.cs">
+      <DependentUpon>proveedores.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="proveedores.aspx.designer.cs">
+      <DependentUpon>proveedores.aspx</DependentUpon>
     </Compile>
     <Compile Include="register.aspx.cs">
       <DependentUpon>register.aspx</DependentUpon>

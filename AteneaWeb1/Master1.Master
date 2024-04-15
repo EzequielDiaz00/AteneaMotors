@@ -11,7 +11,10 @@
     <link href="css/css3.css" rel="stylesheet" />
     <link href="css/css4.css" rel="stylesheet" />
     <title>Atenea Motors</title>
-
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
     <ul>
         <li class="active"><a href="default.aspx">Inicio</a></li>
         <li><a href="catalogo.aspx">Catalogo</a></li>
@@ -19,15 +22,12 @@
         <li style="float: right;"><a href="login.aspx">Login</a></li>
     </ul>
 
-    <asp:ContentPlaceHolder ID="head" runat="server">
-    </asp:ContentPlaceHolder>
-</head>
-<body>
     <form id="form1" runat="server">
         <div>
             <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
             </asp:ContentPlaceHolder>
         </div>
     </form>
+    <p style="color:white;text-align:center;">© 2024 AteneaMotors | Universidad Gerardo Barrios</p>
 </body>
 </html>

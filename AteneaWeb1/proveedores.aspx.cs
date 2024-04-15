@@ -1,37 +1,41 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.Configuration;
 using System.Data;
 using System.Data.SqlClient;
+using System.Linq;
+using System.Web;
+using System.Web.UI;
 using System.Web.UI.WebControls;
 
 namespace AteneaWeb1
 {
-    public partial class IngresarP : System.Web.UI.Page
+    public partial class proveedores : System.Web.UI.Page
     {
         protected void Page_Load(object sender, EventArgs e)
         {
             if (!IsPostBack)
             {
-                CargarAutos();
+                CargarProv();
             }
         }
 
-        protected void btnAgregarProducto_Click(object sender, EventArgs e)
+        protected void AdProvB_Click(object sender, EventArgs e)
         {
             string connectionString = ConfigurationManager.ConnectionStrings["connectionDB"].ConnectionString;
 
-            string query = "INSERT INTO Autos (Nombre, Descripcion, Anio, Color, ImagenUrl, Tipo) VALUES (@Nombre, @Descripcion, @Anio, @Color, @ImagenUrl, @Tipo)";
+            string query = "INSERT INTO Proveedores (Nombre, Descripcion, Marca, Direccion, Telefono, Tipo) VALUES (@Nombre, @Descripcion, @Marca, @Direccion, @Telefono, @Tipo)";
 
             using (SqlConnection connection = new SqlConnection(connectionString))
             {
                 using (SqlCommand command = new SqlCommand(query, connection))
                 {
-                    command.Parameters.AddWithValue("@Nombre", txtNombre.Text);
-                    command.Parameters.AddWithValue("@Descripcion", txtDescripcion.Text);
-                    command.Parameters.AddWithValue("@Anio", txtAnio.Text);
-                    command.Parameters.AddWithValue("@Color", txtColor.Text);
-                    command.Parameters.AddWithValue("@ImagenUrl", txtImagenUrl.Text);
-                    command.Parameters.AddWithValue("@Tipo", txtTipo.Text);
+                    command.Parameters.AddWithValue("@Nombre", AdProv1.Text);
+                    command.Parameters.AddWithValue("@Descripcion", AdProv2.Text);
+                    command.Parameters.AddWithValue("@Marca", AdProv3.Text);
+                    command.Parameters.AddWithValue("@Direccion", AdProv4.Text);
+                    command.Parameters.AddWithValue("@Telefono", AdProv5.Text);
+                    command.Parameters.AddWithValue("@Tipo", AdProv6.Text);
 
                     try
                     {
@@ -43,14 +47,14 @@ namespace AteneaWeb1
                         {
                             Response.Write("<script>alert('Producto agregado correctamente');</script>");
 
-                            txtNombre.Text = "";
-                            txtDescripcion.Text = "";
-                            txtAnio.Text = "";
-                            txtColor.Text = "";
-                            txtImagenUrl.Text = "";
-                            txtTipo.Text = "";
+                            AdProv1.Text = "";
+                            AdProv2.Text = "";
+                            AdProv3.Text = "";
+                            AdProv4.Text = "";
+                            AdProv5.Text = "";
+                            AdProv6.Text = "";
 
-                            CargarAutos();
+                            CargarProv();
                         }
                         else
                         {
@@ -65,11 +69,11 @@ namespace AteneaWeb1
             }
         }
 
-        private void CargarAutos()
+        private void CargarProv()
         {
             string connectionString = ConfigurationManager.ConnectionStrings["connectionDB"].ConnectionString;
 
-            string query = "SELECT ID, Nombre, Descripcion, Anio, Color, ImagenUrl, Tipo FROM Autos";
+            string query = "SELECT ID, Nombre, Descripcion, Marca, Direccion, Telefono, Tipo FROM Proveedores";
 
             using (SqlConnection connection = new SqlConnection(connectionString))
             {
@@ -83,8 +87,8 @@ namespace AteneaWeb1
                     adapter.Fill(dataTable);
 
                     // Vincular los resultados al Repeater
-                    rptAuto.DataSource = dataTable;
-                    rptAuto.DataBind();
+                    rptProv.DataSource = dataTable;
+                    rptProv.DataBind();
                 }
                 catch (Exception ex)
                 {
@@ -94,12 +98,12 @@ namespace AteneaWeb1
             }
         }
 
-        protected void EliminarAuto_Click(object sender, EventArgs e)
+        protected void EliminarProv_Click(object sender, EventArgs e)
         {
             string ID = ((Button)sender).CommandArgument;
 
             string connectionString = ConfigurationManager.ConnectionStrings["connectionDB"].ConnectionString;
-            string query = "DELETE FROM Autos WHERE ID = @ID";
+            string query = "DELETE FROM Proveedores WHERE ID = @ID";
 
             using (SqlConnection connection = new SqlConnection(connectionString))
             {
@@ -114,13 +118,12 @@ namespace AteneaWeb1
 
                         if (rowsAffected > 0)
                         {
-                            // Si la eliminación fue exitosa, recargar la lista de autos
-                            CargarAutos();
+                            CargarProv();
                         }
                     }
                     catch (Exception ex)
                     {
-                        Response.Write("<script>alert('Error al eliminar el auto: " + ex.Message + "');</script>");
+                        Response.Write("<script>alert('Error al eliminar el proveedor: " + ex.Message + "');</script>");
                     }
                 }
             }
