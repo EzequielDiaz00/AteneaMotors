@@ -27,3 +27,12 @@ values ('admin', 'admin');
 
 
 select * from DatosUsuario;
+
+create table DatosdeRegistrados (
+	ID INT PRIMARY KEY IDENTITY,
+    usuario NVARCHAR(100),
+	correo NVARCHAR(100),
+    contraseña NVARCHAR(100)
+);
+
+select * from DatosdeRegistrados;

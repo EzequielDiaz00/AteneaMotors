@@ -17,7 +17,7 @@ namespace AteneaWeb1
         }
         protected void btnL1_Click(object sender, EventArgs e)
         {
-            string connectionString = ConfigurationManager.ConnectionStrings["connectionDB2"].ConnectionString;
+            string connectionString = ConfigurationManager.ConnectionStrings["connectionDB"].ConnectionString;
             string usuario = txtUsuario.Text.Trim();
             string contraseña = txtContraseña.Text.Trim();
 
