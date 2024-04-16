@@ -17,7 +17,7 @@ namespace AteneaWeb1
         }
         protected void btnL1_Click(object sender, EventArgs e)
         {
-            string connectionString = ConfigurationManager.ConnectionStrings["connectionDB"].ConnectionString;
+            string connectionString = ConfigurationManager.ConnectionStrings["connectionDB2"].ConnectionString;
             string usuario = txtUsuario.Text.Trim();
             string contraseña = txtContraseña.Text.Trim();
 
@@ -38,7 +38,9 @@ namespace AteneaWeb1
                     if (rowsAffected > 0)
                     {
                         // Inicio de sesión exitoso, redirigir al usuario
-                        Response.Redirect("default.aspx");
+                        Session["ConnectionString"] = connectionString;
+                        Session["usuario"] = usuario;
+                        Response.Redirect("usuario.aspx");
                     }
                     else
                     {
