@@ -132,6 +132,7 @@
     <Content Include="loginAdmon.aspx" />
     <Content Include="proveedores.aspx" />
     <Content Include="register.aspx" />
+    <Content Include="usuario.aspx" />
     <Content Include="Web.config" />
     <Content Include="default.aspx" />
   </ItemGroup>
@@ -220,6 +221,13 @@
     </Compile>
     <Compile Include="register.aspx.designer.cs">
       <DependentUpon>register.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="usuario.aspx.cs">
+      <DependentUpon>usuario.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="usuario.aspx.designer.cs">
+      <DependentUpon>usuario.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>
