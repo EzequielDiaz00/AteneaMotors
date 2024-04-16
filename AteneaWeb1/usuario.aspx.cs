@@ -25,15 +25,15 @@ namespace AteneaWeb1
                 if (Session["usuario"] != null)
                 {
                     
-                    string nombreUsuario = ObtenerNombreUsuarioDesdeLaBaseDeDatos((string)Session["usuario"]);
+                    string nombreUsuario = ObtenerNombre((string)Session["usuario"]);
 
                     Session["NombreUsuario"] = nombreUsuario;
                 }
             }
         }
-        string connectionString = ConfigurationManager.ConnectionStrings["connectionDB2"].ConnectionString;
+        string connectionString = ConfigurationManager.ConnectionStrings["connectionDB"].ConnectionString;
 
-        private string ObtenerNombreUsuarioDesdeLaBaseDeDatos(string usuario)
+        private string ObtenerNombre(string usuario)
         {
             using (SqlConnection connection = new SqlConnection(connectionString))
             {
