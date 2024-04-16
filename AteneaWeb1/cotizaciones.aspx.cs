@@ -11,7 +11,15 @@ namespace AteneaWeb1
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-
+            if (Session["ConnectionString"] == null || Session["usuario"] == null)
+            {
+                Response.Redirect("loginAdmon.aspx");
+            }
+            else
+            {
+                string connectionString = Session["ConnectionString"].ToString();
+                string usuario = Session["usuario"].ToString();
+            }
         }
     }
 }

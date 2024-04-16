@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Configuration;
 using System.Linq;
 using System.Web;
 using System.Web.UI;
@@ -11,8 +12,17 @@ namespace AteneaWeb1
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-
+            if (Session["ConnectionString"] == null || Session["usuario"] == null)
+            {
+                Response.Redirect("loginAdmon.aspx");
+            }
+            else
+            {
+                string connectionString = Session["ConnectionString"].ToString();
+                string usuario = Session["usuario"].ToString();
+            }
         }
+
 
         protected void Proveedores_Click(object sender, EventArgs e)
         {
@@ -27,6 +37,13 @@ namespace AteneaWeb1
         protected void RevisarCot_Click(object sender, EventArgs e)
         {
             Response.Redirect("cotizaciones.aspx");
+        }
+
+        protected void cerrarSS_Click(object sender, EventArgs e)
+        {
+            Session.Remove("ConnectionString");
+            Session.Remove("usuario");
+            Response.Redirect("loginAdmon.aspx");
         }
     }
 }

@@ -11,7 +11,8 @@
             <asp:Button CssClass="btnA1" Text="Ingresar Autos" runat="server" OnClick="Ingresar_Click"/>
             <br />
             <br />
-            <asp:Button CssClass="btnA2" Text="Revisar Cotizaciones" runat="server" OnClick="RevisarCot_Click"/>
+            <asp:Button CssClass="btnA1" Text="Revisar Cotizaciones" runat="server" OnClick="RevisarCot_Click"/>
+            <asp:Button CssClass="btnA1" Text="Cerrar Sesion" runat="server" OnClick="cerrarSS_Click"/>
         </div>
     </div>
 </asp:Content>

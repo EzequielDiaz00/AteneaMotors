@@ -18,6 +18,16 @@ namespace AteneaWeb1
             {
                 CargarProv();
             }
+
+            if (Session["ConnectionString"] == null || Session["usuario"] == null)
+            {
+                Response.Redirect("loginAdmon.aspx");
+            }
+            else
+            {
+                string connectionString = Session["ConnectionString"].ToString();
+                string usuario = Session["usuario"].ToString();
+            }
         }
 
         protected void AdProvB_Click(object sender, EventArgs e)

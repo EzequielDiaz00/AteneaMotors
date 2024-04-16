@@ -8,16 +8,16 @@
     <div class="divL1">
         <div class="divL2">
             <asp:Label CssClass="lbl1" Text="Usuario:" runat="server" Style="margin-right: 38px;"/>
-            <asp:TextBox CssClass="txtb1" runat="server" />
+            <asp:TextBox ID="txtL1" CssClass="txtb1" runat="server" />
             <br />
             <br />
             <br />
             <asp:Label CssClass="lbl1" Text="Contraseña:" runat="server"/>
-            <asp:TextBox Type="password" CssClass="txtb1" runat="server" />
+            <asp:TextBox ID="txtL2" Type="password" CssClass="txtb1" runat="server" />
             <br />
             <br />
             <br />
-            <asp:Button CssClass="btnL1" Text="Ingresar" runat="server" ID="btnL1"/>
+            <asp:Button CssClass="btnL1" Text="Ingresar" runat="server" ID="btnL1" OnClick="btnL1_Click"/>
         </div>
     </div>
 </asp:Content>
