@@ -36,8 +36,8 @@
             <br />
             <asp:Button Style="float: right;" Class="btnc1" Text="Filtrar" runat="server" OnClick="btnFiltrar_Click" />
             <asp:Button Style="float: right;" Class="btnc1" ID="btnReset" runat="server" Text="Limpiar" OnClick="btnReset_Click" />
-            <div style="float: right;">
-                <asp:Label Class="filt2" Text="Tipo" runat="server" />
+            <div style="float: right; margin-right: 20px;">
+                <asp:Label Style="margin-left: 10px;" Class="filt2" Text="Tipo" runat="server" />
                 <asp:RadioButtonList ID="rbTipo" runat="server">
                     <asp:ListItem Class="filt3" Id="car1" Value="PickUp" Text="PickUp" runat="server" />
                     <asp:ListItem Class="filt3" Id="car2" Value="Sedan" Text="Sedan" runat="server" />
@@ -45,17 +45,8 @@
                     <asp:ListItem Class="filt3" Id="car4" Value="Microbus" Text="Microbus" runat="server" />
                 </asp:RadioButtonList>
             </div>
-            <div style="float: right;">
-                <asp:Label Class="filt2" Text="Color" runat="server" />
-                <asp:RadioButtonList ID="rbColor" runat="server">
-                    <asp:ListItem Class="filt3" Id="col1" Value="Rojo" Text="Rojo" runat="server" />
-                    <asp:ListItem Class="filt3" Id="col2" Value="Gris" Text="Gris" runat="server" />
-                    <asp:ListItem Class="filt3" Id="col3" Value="Blanco" Text="Blanco" runat="server" />
-                    <asp:ListItem Class="filt3" Id="col4" Value="Azul" Text="Azul" runat="server" />
-                </asp:RadioButtonList>
-            </div>
-            <div style="float: right;">
-                <asp:Label Class="filt2" Text="Año" runat="server" />
+            <div style="float: right; margin-right: 20px;">
+                <asp:Label Style="margin-left: 10px;" Class="filt2" Text="Año" runat="server" />
                 <asp:RadioButtonList ID="rbAnio" runat="server">
                     <asp:ListItem Class="filt3" Id="an1" Value="2024" Text="2024" runat="server" />
                     <asp:ListItem Class="filt3" Id="an2" Value="2023" Text="2023" runat="server" />
@@ -63,10 +54,19 @@
                     <asp:ListItem Class="filt3" Id="an4" Value="2021" Text="2021" runat="server" />
                 </asp:RadioButtonList>
             </div>
+            <div style="float: right; margin-right: 20px;">
+                <asp:Label Style="margin-left: 10px;" Class="filt2" Text="Marca" runat="server" />
+                <asp:RadioButtonList ID="rbMarca" runat="server">
+                    <asp:ListItem Class="filt3" Id="col1" Value="Toyota" Text="Toyota" runat="server" />
+                    <asp:ListItem Class="filt3" Id="col2" Value="Ford" Text="Ford" runat="server" />
+                    <asp:ListItem Class="filt3" Id="col3" Value="Mazda" Text="Mazda" runat="server" />
+                    <asp:ListItem Class="filt3" Id="col4" Value="Chevrolet" Text="Chevrolet" runat="server" />
+                </asp:RadioButtonList>
+            </div>
 
         </div>
     </div>
-
+    <hr />
     <div>
         <asp:Repeater ID="rptProductos" runat="server">
     <ItemTemplate>
@@ -80,7 +80,7 @@
                 <a class="btnc2" href="cotizar.aspx">Cotizar</a>
             </div>
             <div class="divcat3">
-                <img class="imgcat1" width="50%" src='<%# Eval("ImagenUrl") %>' alt='<%# Eval("Nombre") %>' />
+                <img class="imgcat1" style="width: 100%;" src='<%# Eval("ImagenUrl") %>' alt='<%# Eval("Nombre") %>' />
             </div>
         </div>
         <hr />
