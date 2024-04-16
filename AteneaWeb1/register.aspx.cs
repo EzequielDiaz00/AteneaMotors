@@ -1,17 +1,12 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Data.SqlClient;
 using System.Configuration;
-using System.Web;
-using System.Web.UI;
-using System.Web.UI.WebControls;
+using System.Data.SqlClient;
 
 namespace AteneaWeb1
 {
     public partial class register : System.Web.UI.Page
     {
-        
+
         protected void Page_Load(object sender, EventArgs e)
         {
 
@@ -110,7 +105,7 @@ namespace AteneaWeb1
                 errorLabel.Visible = true;
                 return;
             }
-            
+
         }
 
         // Método para validar el formato del correo electrónico
@@ -128,9 +123,9 @@ namespace AteneaWeb1
 
         }
 
-        
 
-       
+
+
     }
-    
+
 }

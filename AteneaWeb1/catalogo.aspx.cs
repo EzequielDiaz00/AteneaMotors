@@ -3,10 +3,6 @@ using System.Collections.Generic;
 using System.Configuration;
 using System.Data;
 using System.Data.SqlClient;
-using System.Linq;
-using System.Web;
-using System.Web.UI;
-using System.Web.UI.WebControls;
 
 namespace AteneaWeb1
 {
@@ -31,7 +27,7 @@ namespace AteneaWeb1
 
         private void CargarProductos()
         {
-            //Codido para lista de productos.
+            //Codigo para lista de productos.
             //rptProductos.DataSource = productos;
             //rptProductos.DataBind();
 
@@ -65,10 +61,10 @@ namespace AteneaWeb1
         protected void btnFiltrar_Click(object sender, EventArgs e)
         {
             string tipo = rbTipo.SelectedValue;
-            string color = rbColor.SelectedValue;
+            string nombre = rbMarca.SelectedValue;
             string anio = rbAnio.SelectedValue;
 
-            List<Producto> productosFiltrados = FiltrarProductosBD(tipo, color, anio);
+            List<Producto> productosFiltrados = FiltrarProductosBD(tipo, nombre, anio);
 
             rptProductos.DataSource = productosFiltrados;
             rptProductos.DataBind();
@@ -78,24 +74,24 @@ namespace AteneaWeb1
             // Aquí manejas el evento de clic del botón de reset
             // Reseteas las selecciones de los RadioButtonList
             rbTipo.SelectedIndex = -1;
-            rbColor.SelectedIndex = -1;
+            rbMarca.SelectedIndex = -1;
             rbAnio.SelectedIndex = -1;
 
             // Luego vuelves a cargar todos los productos sin filtros
             CargarProductos();
         }
 
-        private List<Producto> FiltrarProductosLL(string tipo, string color, string anio)
+        private List<Producto> FiltrarProductosLL(string tipo, string nombre, string anio)
         {
             List<Producto> productosFiltrados = new List<Producto>();
 
             foreach (var producto in productos)
             {
                 bool tipoCoincide = string.IsNullOrEmpty(tipo) || producto.Tipo == tipo;
-                bool colorCoincide = string.IsNullOrEmpty(color) || producto.Color == color;
+                bool nombreCoincide = string.IsNullOrEmpty(nombre) || producto.Nombre == nombre;
                 bool anioCoincide = string.IsNullOrEmpty(anio) || producto.Anio == anio;
 
-                if (tipoCoincide && colorCoincide && anioCoincide)
+                if (tipoCoincide && nombreCoincide && anioCoincide)
                 {
                     productosFiltrados.Add(producto);
                 }
@@ -103,19 +99,19 @@ namespace AteneaWeb1
 
             return productosFiltrados;
         }
-        private List<Producto> FiltrarProductosBD(string tipo, string color, string anio)
+        private List<Producto> FiltrarProductosBD(string tipo, string nombre, string anio)
         {
             List<Producto> productosFiltrados = new List<Producto>();
 
             string connectionString = ConfigurationManager.ConnectionStrings["connectionDB"].ConnectionString;
 
-            string query = "SELECT Nombre, Descripcion, Anio, Color, ImagenUrl, Tipo FROM Autos WHERE (@Tipo IS NULL OR Tipo = @Tipo) AND (@Color IS NULL OR Color = @Color) AND (@Anio IS NULL OR Anio = @Anio)";
+            string query = "SELECT Nombre, Descripcion, Anio, Color, ImagenUrl, Tipo FROM Autos WHERE (@Tipo IS NULL OR Tipo = @Tipo) AND (@Nombre IS NULL OR Nombre = @Nombre) AND (@Anio IS NULL OR Anio = @Anio)";
 
             using (SqlConnection connection = new SqlConnection(connectionString))
             {
                 SqlCommand command = new SqlCommand(query, connection);
                 command.Parameters.AddWithValue("@Tipo", string.IsNullOrEmpty(tipo) ? DBNull.Value : (object)tipo);
-                command.Parameters.AddWithValue("@Color", string.IsNullOrEmpty(color) ? DBNull.Value : (object)color);
+                command.Parameters.AddWithValue("@Nombre", string.IsNullOrEmpty(nombre) ? DBNull.Value : (object)nombre);
                 command.Parameters.AddWithValue("@Anio", string.IsNullOrEmpty(anio) ? DBNull.Value : (object)anio);
                 SqlDataAdapter adapter = new SqlDataAdapter(command);
                 DataTable dataTable = new DataTable();
