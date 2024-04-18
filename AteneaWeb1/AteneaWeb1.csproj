@@ -130,7 +130,6 @@
     <Content Include="IngresarP.aspx" />
     <Content Include="login.aspx" />
     <Content Include="loginAdmon.aspx" />
-    <Content Include="PanelNotificaciones.aspx" />
     <Content Include="proveedores.aspx" />
     <Content Include="register.aspx" />
     <Content Include="usuario.aspx" />
@@ -200,13 +199,6 @@
     </Compile>
     <Compile Include="Master2.Master.designer.cs">
       <DependentUpon>Master2.Master</DependentUpon>
-    </Compile>
-    <Compile Include="PanelNotificaciones.aspx.cs">
-      <DependentUpon>PanelNotificaciones.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="PanelNotificaciones.aspx.designer.cs">
-      <DependentUpon>PanelNotificaciones.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="default.aspx.cs">
