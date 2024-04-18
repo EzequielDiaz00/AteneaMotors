@@ -1,4 +1,4 @@
-﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Master1.master.cs" Inherits="AteneaWeb1.Master1" %>
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Master3.master.cs" Inherits="AteneaWeb1.Master3" %>
 
 <!DOCTYPE html>
 
@@ -10,19 +10,19 @@
     <link href="css/css2.css" rel="stylesheet" />
     <link href="css/css3.css" rel="stylesheet" />
     <link href="css/css4.css" rel="stylesheet" />
+    <link href="css/css6.css" rel="stylesheet" />
     <title>Atenea Motors</title>
     <asp:ContentPlaceHolder ID="head" runat="server">
     </asp:ContentPlaceHolder>
 </head>
 <body>
-    <ul>
-        <li class="active"><a href="default.aspx">Inicio</a></li>
-        <li><a href="catalogo.aspx">Catalogo</a></li>
-        <li style="float: right;"><a href="cotizar.aspx">Cotizar</a></li>
-        <li style="float: right;"><a href="login.aspx">Login</a></li>
-    </ul>
-
     <form id="form1" runat="server">
+        <ul>
+            <li class="active"><a href="defaultUsuario.aspx">Inicio</a></li>
+            <li><a href="catalogoUsuario.aspx">Catalogo</a></li>
+            <li style="float: right;"><asp:Button CssClass="btnCS" Text="Cerrar sesion" runat="server" OnClick="cerrarSesion_Click"/></li>
+            <li style="float: right;" class="active"><a href="catalogoUsuario.aspx">Catalogo</a></li>
+        </ul>
         <div>
             <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
             </asp:ContentPlaceHolder>

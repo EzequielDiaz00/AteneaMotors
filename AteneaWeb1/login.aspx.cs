@@ -35,7 +35,7 @@ namespace AteneaWeb1
                         // Inicio de sesión exitoso, redirigir al usuario
                         Session["ConnectionString"] = connectionString;
                         Session["usuario"] = usuario;
-                        Response.Redirect("usuario.aspx");
+                        Response.Redirect("defaultUsuario.aspx");
                     }
                     else
                     {
