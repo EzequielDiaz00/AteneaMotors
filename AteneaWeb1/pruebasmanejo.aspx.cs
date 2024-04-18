@@ -6,13 +6,13 @@ using System.Web.UI.WebControls;
 
 namespace AteneaWeb1
 {
-    public partial class cotizaciones : System.Web.UI.Page
+    public partial class pruebasmanejo : System.Web.UI.Page
     {
         protected void Page_Load(object sender, EventArgs e)
         {
             if (!IsPostBack)
             {
-                CargarCot();
+                CargarPM();
             }
 
             if (Session["ConnectionString"] == null || Session["usuario"] == null)
@@ -21,11 +21,11 @@ namespace AteneaWeb1
             }
         }
 
-        private void CargarCot()
+        private void CargarPM()
         {
             string connectionString = ConfigurationManager.ConnectionStrings["connectionDB"].ConnectionString;
 
-            string query = "SELECT Nombre, Apellido, Correo, Telefono FROM DatosUsuario";
+            string query = "SELECT Nombre, Apellido, Correo, Telefono, Auto, Fecha FROM PruebaManejo";
 
             using (SqlConnection connection = new SqlConnection(connectionString))
             {
@@ -39,12 +39,11 @@ namespace AteneaWeb1
                     adapter.Fill(dataTable);
 
                     // Vincular los resultados al Repeater
-                    rptCot.DataSource = dataTable;
-                    rptCot.DataBind();
+                    rptPM.DataSource = dataTable;
+                    rptPM.DataBind();
                 }
                 catch (Exception ex)
                 {
-                    // Manejar cualquier error que ocurra durante la obtención de datos
                     Console.WriteLine("Error: " + ex.Message);
                 }
             }
@@ -55,7 +54,7 @@ namespace AteneaWeb1
             string Correo = ((Button)sender).CommandArgument;
 
             string connectionString = ConfigurationManager.ConnectionStrings["connectionDB"].ConnectionString;
-            string query = "DELETE FROM DatosUsuario WHERE Correo = @Correo";
+            string query = "DELETE FROM PruebaManejo WHERE Correo = @Correo";
 
             using (SqlConnection connection = new SqlConnection(connectionString))
             {
@@ -70,12 +69,12 @@ namespace AteneaWeb1
 
                         if (rowsAffected > 0)
                         {
-                            CargarCot();
+                            CargarPM();
                         }
                     }
                     catch (Exception ex)
                     {
-                        Response.Write("<script>alert('Error al eliminar la cotizacion: " + ex.Message + "');</script>");
+                        Response.Write("<script>alert('Error al eliminar la prueba de manejo: " + ex.Message + "');</script>");
                     }
                 }
             }

@@ -3,11 +3,6 @@
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
   <style>
-    /* Estilos para los elementos */
-    body {
-      background-color: #005E54; /* Color de fondo oscuro */
-    }
-
     .container {
       width: 100%;
       max-width: 600px; /* Ancho máximo del formulario */

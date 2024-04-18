@@ -87,4 +87,3 @@ C:\Users\Ezequiel\Arashi\Documentos\UGB\Ciclo I-2024\Ing_Soft\AteneaMotors\Atene
 C:\Users\Ezequiel\Arashi\Documentos\UGB\Ciclo I-2024\Ing_Soft\AteneaMotors\AteneaWeb1\obj\Debug\AteneaWeb1.csproj.CopyComplete
 C:\Users\Ezequiel\Arashi\Documentos\UGB\Ciclo I-2024\Ing_Soft\AteneaMotors\AteneaWeb1\obj\Debug\AteneaWeb1.dll
 C:\Users\Ezequiel\Arashi\Documentos\UGB\Ciclo I-2024\Ing_Soft\AteneaMotors\AteneaWeb1\obj\Debug\AteneaWeb1.pdb
-C:\Users\Ezequiel\Arashi\Documentos\UGB\Ciclo I-2024\Ing_Soft\AteneaMotors\AteneaWeb1\obj\Debug\AteneaWeb1.csproj.AssemblyReference.cache

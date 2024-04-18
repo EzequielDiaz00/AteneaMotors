@@ -36,3 +36,22 @@ create table DatosdeRegistrados (
 );
 
 select * from DatosdeRegistrados;
+
+create table PruebaManejo (
+	ID INT PRIMARY KEY IDENTITY,
+	Nombre NVARCHAR(100),
+	Apellido NVARCHAR(100),
+	Correo NVARCHAR(100),
+	Telefono NVARCHAR(50),
+	Auto NVARCHAR(50),
+	Fecha DATE
+);
+
+select * from PruebaManejo;
+
+insert into PruebaManejo(Fecha)
+values ('2024-04-19');
+
+delete from PruebaManejo;
+
+drop table PruebaManejo;

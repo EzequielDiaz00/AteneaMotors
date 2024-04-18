@@ -34,5 +34,10 @@ namespace AteneaWeb1
             Session.Remove("usuario");
             Response.Redirect("loginAdmon.aspx");
         }
+
+        protected void RevisarPM_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("pruebasmanejo.aspx");
+        }
     }
 }

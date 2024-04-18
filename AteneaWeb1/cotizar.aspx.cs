@@ -20,10 +20,8 @@ namespace AteneaWeb1
             string correo = txtEmail.Text.Trim();
             string telefono = txtTelefono.Text.Trim();
 
-            // Verificar si el correo tiene un formato válido
             if (IsValidEmail(correo))
             {
-                // El correo es válido, puedes proceder con la inserción en la base de datos
                 using (SqlConnection connection = new SqlConnection(connectionString))
                 {
                     string query = "INSERT INTO DatosUsuario (Nombre, Apellido, Correo, Telefono) VALUES (@Nombre, @Apellido, @Correo, @Telefono)";
@@ -37,36 +35,30 @@ namespace AteneaWeb1
                     {
                         connection.Open();
                         int rowsAffected = command.ExecuteNonQuery();
-                        // Verificar si se insertó correctamente
                         if (rowsAffected > 0)
                         {
-                            // Éxito
                             txtNombre.Text = "";
                             txtApellido.Text = "";
                             txtEmail.Text = "";
                             txtTelefono.Text = "";
-                            Response.Write("Datos insertados correctamente.");
+                            Response.Write("<script>alert('Cotizacion enviada');</script>");
                         }
                         else
                         {
-                            // Error
-                            Response.Write("No se pudo insertar los datos.");
+                            Response.Write("<script>alert('Error al enviar datos');</script>");
                         }
                     }
                     catch (Exception ex)
                     {
-                        Response.Write("Error: " + ex.Message);
+                        Response.Write("<script>alert('Error: ');</script>" + ex.Message);
                     }
                 }
             }
             else
             {
-                // El correo no es válido, mostrar mensaje de error
-                Response.Write("Correo inválido: Debe ser un correo electrónico válido.");
+                Response.Write("<script>alert('Ingrese un correo valido');</script>");
             }
         }
-
-        // Método para validar el formato del correo electrónico
         private bool IsValidEmail(string email)
         {
             try
