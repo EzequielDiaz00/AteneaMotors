@@ -29,12 +29,9 @@ namespace AteneaWeb1
                 }
             }
         }
-<<<<<<< HEAD:AteneaWeb1/usuario.aspx.cs
-        string connectionString = ConfigurationManager.ConnectionStrings["connectionDB2"].ConnectionString;
 
-=======
         string connectionString = ConfigurationManager.ConnectionStrings["connectionDB"].ConnectionString;
->>>>>>> 3475a7740aea3529473e91e596af41d006a6084c:AteneaWeb1/Master3.Master.cs
+
         private string ObtenerNombre(string usuario)
         {
             using (SqlConnection connection = new SqlConnection(connectionString))
