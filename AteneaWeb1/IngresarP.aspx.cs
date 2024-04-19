@@ -19,11 +19,6 @@ namespace AteneaWeb1
             {
                 Response.Redirect("loginAdmon.aspx");
             }
-            else
-            {
-                string connectionString = Session["ConnectionString"].ToString();
-                string usuario = Session["usuario"].ToString();
-            }
         }
 
         protected void btnAgregarProducto_Click(object sender, EventArgs e)

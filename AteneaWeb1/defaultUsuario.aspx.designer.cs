@@ -11,7 +11,7 @@ namespace AteneaWeb1
 {
 
 
-    public partial class PanelNotificaciones
+    public partial class defaultUsuario
     {
     }
 }

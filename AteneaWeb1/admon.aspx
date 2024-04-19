@@ -12,7 +12,10 @@
             <br />
             <br />
             <asp:Button CssClass="btnA1" Text="Revisar Cotizaciones" runat="server" OnClick="RevisarCot_Click"/>
-            <asp:Button CssClass="btnA1" Text="Cerrar Sesion" runat="server" OnClick="cerrarSS_Click"/>
+            <asp:Button CssClass="btnA1" Text="Revisar Pruebas de Manejo" runat="server" OnClick="RevisarPM_Click"/>
+            <br />
+            <br />
+            <asp:Button CssClass="btnA2" Text="Cerrar Sesion" runat="server" OnClick="cerrarSS_Click"/>
         </div>
     </div>
 </asp:Content>
