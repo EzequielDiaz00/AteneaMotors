@@ -21,7 +21,7 @@
             <li class="active"><a href="defaultUsuario.aspx">Inicio</a></li>
             <li><a href="catalogoUsuario.aspx">Catalogo</a></li>
             <li style="float: right;"><asp:Button CssClass="btnCS" Text="Cerrar sesion" runat="server" OnClick="cerrarSesion_Click"/></li>
-            <li style="float: right;" class="active"><a href="perfilUsuario.aspx"><%= Session["NombreUsuario"] %></a></li>
+            <li style="float: right;" class="active"><a href="#"><%= Session["NombreUsuario"] %></a></li>
         </ul>
         <div>
             <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
