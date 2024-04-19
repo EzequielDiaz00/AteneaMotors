@@ -1,11 +1,6 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Data.SqlClient;
 using System.Configuration;
-using System.Web;
-using System.Web.UI;
-using System.Web.UI.WebControls;
+using System.Data.SqlClient;
 
 namespace AteneaWeb1
 {
@@ -40,7 +35,7 @@ namespace AteneaWeb1
                         // Inicio de sesión exitoso, redirigir al usuario
                         Session["ConnectionString"] = connectionString;
                         Session["usuario"] = usuario;
-                        Response.Redirect("usuario.aspx");
+                        Response.Redirect("defaultUsuario.aspx");
                     }
                     else
                     {

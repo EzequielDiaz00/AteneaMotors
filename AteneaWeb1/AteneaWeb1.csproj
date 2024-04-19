@@ -120,6 +120,7 @@
   <ItemGroup>
     <Content Include="admon.aspx" />
     <Content Include="catalogo.aspx" />
+    <Content Include="catalogoUsuario.aspx" />
     <Content Include="cotizaciones.aspx" />
     <Content Include="cotizar.aspx" />
     <Content Include="css\css1.css" />
@@ -127,12 +128,15 @@
     <Content Include="css\css3.css" />
     <Content Include="css\css4.css" />
     <Content Include="css\css5.css" />
+    <Content Include="css\css6.css" />
+    <Content Include="defaultUsuario.aspx" />
     <Content Include="IngresarP.aspx" />
     <Content Include="login.aspx" />
     <Content Include="loginAdmon.aspx" />
     <Content Include="proveedores.aspx" />
+    <Content Include="pruebasmanejo.aspx" />
+    <Content Include="pruebaUsuario.aspx" />
     <Content Include="register.aspx" />
-    <Content Include="usuario.aspx" />
     <Content Include="Web.config" />
     <Content Include="default.aspx" />
   </ItemGroup>
@@ -151,6 +155,13 @@
     <Compile Include="catalogo.aspx.designer.cs">
       <DependentUpon>catalogo.aspx</DependentUpon>
     </Compile>
+    <Compile Include="catalogoUsuario.aspx.cs">
+      <DependentUpon>catalogoUsuario.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="catalogoUsuario.aspx.designer.cs">
+      <DependentUpon>catalogoUsuario.aspx</DependentUpon>
+    </Compile>
     <Compile Include="cotizaciones.aspx.cs">
       <DependentUpon>cotizaciones.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -164,6 +175,13 @@
     </Compile>
     <Compile Include="cotizar.aspx.designer.cs">
       <DependentUpon>cotizar.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="defaultUsuario.aspx.cs">
+      <DependentUpon>defaultUsuario.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="defaultUsuario.aspx.designer.cs">
+      <DependentUpon>defaultUsuario.aspx</DependentUpon>
     </Compile>
     <Compile Include="IngresarP.aspx.cs">
       <DependentUpon>IngresarP.aspx</DependentUpon>
@@ -200,6 +218,13 @@
     <Compile Include="Master2.Master.designer.cs">
       <DependentUpon>Master2.Master</DependentUpon>
     </Compile>
+    <Compile Include="Master3.Master.cs">
+      <DependentUpon>Master3.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Master3.Master.designer.cs">
+      <DependentUpon>Master3.Master</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="default.aspx.cs">
       <DependentUpon>default.aspx</DependentUpon>
@@ -215,6 +240,20 @@
     <Compile Include="proveedores.aspx.designer.cs">
       <DependentUpon>proveedores.aspx</DependentUpon>
     </Compile>
+    <Compile Include="pruebasmanejo.aspx.cs">
+      <DependentUpon>pruebasmanejo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="pruebasmanejo.aspx.designer.cs">
+      <DependentUpon>pruebasmanejo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="pruebaUsuario.aspx.cs">
+      <DependentUpon>pruebaUsuario.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="pruebaUsuario.aspx.designer.cs">
+      <DependentUpon>pruebaUsuario.aspx</DependentUpon>
+    </Compile>
     <Compile Include="register.aspx.cs">
       <DependentUpon>register.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -222,17 +261,11 @@
     <Compile Include="register.aspx.designer.cs">
       <DependentUpon>register.aspx</DependentUpon>
     </Compile>
-    <Compile Include="usuario.aspx.cs">
-      <DependentUpon>usuario.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="usuario.aspx.designer.cs">
-      <DependentUpon>usuario.aspx</DependentUpon>
-    </Compile>
   </ItemGroup>
   <ItemGroup>
     <Content Include="Master1.Master" />
     <Content Include="Master2.Master" />
+    <Content Include="Master3.Master" />
     <None Include="packages.config" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>

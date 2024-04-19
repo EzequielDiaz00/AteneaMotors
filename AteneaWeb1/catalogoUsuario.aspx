@@ -1,4 +1,4 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Master1.Master" AutoEventWireup="true" CodeBehind="catalogo.aspx.cs" Inherits="AteneaWeb1.catalogo" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Master3.Master" AutoEventWireup="true" CodeBehind="catalogoUsuario.aspx.cs" Inherits="AteneaWeb1.catalogoUsuario" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
     <style>
@@ -6,11 +6,11 @@
             text-decoration: blink;
             text-align: center;
             display: flex;
-            width: 143px;
+            width: 250px;
             margin-left: auto;
             margin-right: auto;
             font-family: Verdana;
-            font-size: 40px;
+            font-size: 30px;
             border: none;
             color: white;
             background-color: #E1523D;
@@ -77,7 +77,7 @@
                         <p class="txtcat2">Año: <%# Eval("Anio") %></p>
                         <p class="txtcat2">Color: <%# Eval("Color") %></p>
                         <br />
-                        <a class="btnc2" href="cotizar.aspx">Cotizar</a>
+                        <a class="btnc2" href="pruebaUsuario.aspx">Solicitar prueba de manejo</a>
                     </div>
                     <div class="divcat3">
                         <img class="imgcat1" style="width: 100%;" src='<%# Eval("ImagenUrl") %>' alt='<%# Eval("Nombre") %>' />

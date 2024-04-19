@@ -1,0 +1,11 @@
+﻿.btnCS {
+    display: block;
+    text-align: center;
+    padding: 11px 5px;
+    text-decoration: none;
+    background-color: #ED8B16;
+    color: white;
+    border: groove;
+    font-family: Verdana;
+    font-size: 16px;
+}

@@ -1,10 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Configuration;
-using System.Linq;
-using System.Web;
-using System.Web.UI;
-using System.Web.UI.WebControls;
 
 namespace AteneaWeb1
 {
@@ -15,11 +9,6 @@ namespace AteneaWeb1
             if (Session["ConnectionString"] == null || Session["usuario"] == null)
             {
                 Response.Redirect("loginAdmon.aspx");
-            }
-            else
-            {
-                string connectionString = Session["ConnectionString"].ToString();
-                string usuario = Session["usuario"].ToString();
             }
         }
 
@@ -44,6 +33,11 @@ namespace AteneaWeb1
             Session.Remove("ConnectionString");
             Session.Remove("usuario");
             Response.Redirect("loginAdmon.aspx");
+        }
+
+        protected void RevisarPM_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("pruebasmanejo.aspx");
         }
     }
 }

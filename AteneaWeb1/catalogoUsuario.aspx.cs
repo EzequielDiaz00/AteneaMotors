@@ -6,7 +6,7 @@ using System.Data.SqlClient;
 
 namespace AteneaWeb1
 {
-    public partial class catalogo : System.Web.UI.Page
+    public partial class catalogoUsuario : System.Web.UI.Page
     {
         // Lista de productos
         List<Producto> productos = new List<Producto>

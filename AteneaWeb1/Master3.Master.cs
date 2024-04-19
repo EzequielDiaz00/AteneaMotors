@@ -1,20 +1,18 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Data.SqlClient;
 using System.Configuration;
+using System.Data.SqlClient;
+using System.Linq;
 using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 
 namespace AteneaWeb1
 {
-    public partial class usuario : System.Web.UI.Page
+    public partial class Master3 : System.Web.UI.MasterPage
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            
-
             if (Session["ConnectionString"] == null || Session["usuario"] == null)
             {
                 Response.Redirect("login.aspx");
@@ -24,15 +22,19 @@ namespace AteneaWeb1
             {
                 if (Session["usuario"] != null)
                 {
-                    
+
                     string nombreUsuario = ObtenerNombre((string)Session["usuario"]);
 
                     Session["NombreUsuario"] = nombreUsuario;
                 }
             }
         }
+<<<<<<< HEAD:AteneaWeb1/usuario.aspx.cs
         string connectionString = ConfigurationManager.ConnectionStrings["connectionDB2"].ConnectionString;
 
+=======
+        string connectionString = ConfigurationManager.ConnectionStrings["connectionDB"].ConnectionString;
+>>>>>>> 3475a7740aea3529473e91e596af41d006a6084c:AteneaWeb1/Master3.Master.cs
         private string ObtenerNombre(string usuario)
         {
             using (SqlConnection connection = new SqlConnection(connectionString))
@@ -58,7 +60,7 @@ namespace AteneaWeb1
                 }
                 catch (Exception ex)
                 {
-                    
+
                     return null;
                 }
             }
@@ -66,5 +68,11 @@ namespace AteneaWeb1
         }
 
 
+        protected void cerrarSesion_Click(object sender, EventArgs e)
+        {
+            Session.Remove("ConnectionString");
+            Session.Remove("usuario");
+            Response.Redirect("default.aspx");
+        }
     }
 }

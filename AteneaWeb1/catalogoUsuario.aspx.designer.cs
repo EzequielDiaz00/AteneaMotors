@@ -11,7 +11,7 @@ namespace AteneaWeb1
 {
 
 
-    public partial class catalogo
+    public partial class catalogoUsuario
     {
 
         /// <summary>

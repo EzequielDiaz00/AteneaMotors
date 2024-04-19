@@ -1,13 +1,12 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Master1.Master" AutoEventWireup="true" CodeBehind="usuario.aspx.cs" Inherits="AteneaWeb1.usuario" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Master3.Master" AutoEventWireup="true" CodeBehind="defaultUsuario.aspx.cs" Inherits="AteneaWeb1.defaultUsuario" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
     <img class="img1" width="30%" src="img1/OIG1.png" alt="logo" />
     <br />
     <div class="div1">
-        
         <br />
-        <p class="txt1">¡Bienvenid@ <%= Session["NombreUsuario"] %> a Atenea Motors!</p>
+        <p class="txt1">¡Bienvenid@ <%= Session["NombreUsuario"] %> a Atenea Motors! </p>
         <br />
         <p class="txt2">Descubre una experiencia excepcional en la compra de automóviles. 
             En Atenea Motors, ofrecemos una amplia selección de vehículos nuevos y usados de las mejores marcas. 

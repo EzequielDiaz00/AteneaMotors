@@ -11,7 +11,7 @@ namespace AteneaWeb1
 {
 
 
-    public partial class usuario
+    public partial class defaultUsuario
     {
     }
 }
