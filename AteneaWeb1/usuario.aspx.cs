@@ -31,7 +31,7 @@ namespace AteneaWeb1
                 }
             }
         }
-        string connectionString = ConfigurationManager.ConnectionStrings["connectionDB"].ConnectionString;
+        string connectionString = ConfigurationManager.ConnectionStrings["connectionDB2"].ConnectionString;
 
         private string ObtenerNombre(string usuario)
         {
