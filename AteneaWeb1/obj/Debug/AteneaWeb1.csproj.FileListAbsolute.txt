@@ -88,6 +88,7 @@ C:\Users\Ezequiel\Arashi\Documentos\UGB\Ciclo I-2024\Ing_Soft\AteneaMotors\Atene
 C:\Users\Ezequiel\Arashi\Documentos\UGB\Ciclo I-2024\Ing_Soft\AteneaMotors\AteneaWeb1\obj\Debug\AteneaWeb1.dll
 C:\Users\Ezequiel\Arashi\Documentos\UGB\Ciclo I-2024\Ing_Soft\AteneaMotors\AteneaWeb1\obj\Debug\AteneaWeb1.pdb
 C:\Users\Ezequiel\Arashi\Documentos\UGB\Ciclo I-2024\Ing_Soft\AteneaMotors\AteneaWeb1\obj\Debug\AteneaWeb1.csproj.AssemblyReference.cache
+<<<<<<< HEAD
 G:\Otros ordenadores\Mi PC\UGB\Ciclo I-2024\Ing_Soft\AteneaMotors\AteneaWeb1\bin\AteneaWeb1.dll.config
 G:\Otros ordenadores\Mi PC\UGB\Ciclo I-2024\Ing_Soft\AteneaMotors\AteneaWeb1\bin\AteneaWeb1.dll
 G:\Otros ordenadores\Mi PC\UGB\Ciclo I-2024\Ing_Soft\AteneaMotors\AteneaWeb1\bin\AteneaWeb1.pdb
@@ -178,3 +179,94 @@ G:\Otros ordenadores\Mi PC\UGB\Ciclo I-2024\Ing_Soft\AteneaMotors\AteneaWeb1\obj
 G:\Otros ordenadores\Mi PC\UGB\Ciclo I-2024\Ing_Soft\AteneaMotors\AteneaWeb1\obj\Debug\AteneaWeb1.csproj.CopyComplete
 G:\Otros ordenadores\Mi PC\UGB\Ciclo I-2024\Ing_Soft\AteneaMotors\AteneaWeb1\obj\Debug\AteneaWeb1.dll
 G:\Otros ordenadores\Mi PC\UGB\Ciclo I-2024\Ing_Soft\AteneaMotors\AteneaWeb1\obj\Debug\AteneaWeb1.pdb
+=======
+C:\Users\Ezequiel\source\repos\AteneaMotors\AteneaWeb1\bin\AteneaWeb1.dll.config
+C:\Users\Ezequiel\source\repos\AteneaMotors\AteneaWeb1\bin\AteneaWeb1.dll
+C:\Users\Ezequiel\source\repos\AteneaMotors\AteneaWeb1\bin\AteneaWeb1.pdb
+C:\Users\Ezequiel\source\repos\AteneaMotors\AteneaWeb1\bin\roslyn\csc.exe
+C:\Users\Ezequiel\source\repos\AteneaMotors\AteneaWeb1\bin\roslyn\csc.exe.config
+C:\Users\Ezequiel\source\repos\AteneaMotors\AteneaWeb1\bin\roslyn\csc.rsp
+C:\Users\Ezequiel\source\repos\AteneaMotors\AteneaWeb1\bin\roslyn\csi.exe
+C:\Users\Ezequiel\source\repos\AteneaMotors\AteneaWeb1\bin\roslyn\csi.exe.config
+C:\Users\Ezequiel\source\repos\AteneaMotors\AteneaWeb1\bin\roslyn\csi.rsp
+C:\Users\Ezequiel\source\repos\AteneaMotors\AteneaWeb1\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\Ezequiel\source\repos\AteneaMotors\AteneaWeb1\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\Ezequiel\source\repos\AteneaMotors\AteneaWeb1\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Users\Ezequiel\source\repos\AteneaMotors\AteneaWeb1\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\Ezequiel\source\repos\AteneaMotors\AteneaWeb1\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Users\Ezequiel\source\repos\AteneaMotors\AteneaWeb1\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\Ezequiel\source\repos\AteneaMotors\AteneaWeb1\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\Ezequiel\source\repos\AteneaMotors\AteneaWeb1\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Users\Ezequiel\source\repos\AteneaMotors\AteneaWeb1\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Users\Ezequiel\source\repos\AteneaMotors\AteneaWeb1\bin\roslyn\Microsoft.Managed.Core.targets
+C:\Users\Ezequiel\source\repos\AteneaMotors\AteneaWeb1\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\Ezequiel\source\repos\AteneaMotors\AteneaWeb1\bin\roslyn\Microsoft.Win32.Primitives.dll
+C:\Users\Ezequiel\source\repos\AteneaMotors\AteneaWeb1\bin\roslyn\System.AppContext.dll
+C:\Users\Ezequiel\source\repos\AteneaMotors\AteneaWeb1\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\Ezequiel\source\repos\AteneaMotors\AteneaWeb1\bin\roslyn\System.Console.dll
+C:\Users\Ezequiel\source\repos\AteneaMotors\AteneaWeb1\bin\roslyn\System.Diagnostics.DiagnosticSource.dll
+C:\Users\Ezequiel\source\repos\AteneaMotors\AteneaWeb1\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+C:\Users\Ezequiel\source\repos\AteneaMotors\AteneaWeb1\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\Users\Ezequiel\source\repos\AteneaMotors\AteneaWeb1\bin\roslyn\System.Globalization.Calendars.dll
+C:\Users\Ezequiel\source\repos\AteneaMotors\AteneaWeb1\bin\roslyn\System.IO.Compression.dll
+C:\Users\Ezequiel\source\repos\AteneaMotors\AteneaWeb1\bin\roslyn\System.IO.Compression.ZipFile.dll
+C:\Users\Ezequiel\source\repos\AteneaMotors\AteneaWeb1\bin\roslyn\System.IO.FileSystem.dll
+C:\Users\Ezequiel\source\repos\AteneaMotors\AteneaWeb1\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Users\Ezequiel\source\repos\AteneaMotors\AteneaWeb1\bin\roslyn\System.Net.Http.dll
+C:\Users\Ezequiel\source\repos\AteneaMotors\AteneaWeb1\bin\roslyn\System.Net.Sockets.dll
+C:\Users\Ezequiel\source\repos\AteneaMotors\AteneaWeb1\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\Ezequiel\source\repos\AteneaMotors\AteneaWeb1\bin\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll
+C:\Users\Ezequiel\source\repos\AteneaMotors\AteneaWeb1\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+C:\Users\Ezequiel\source\repos\AteneaMotors\AteneaWeb1\bin\roslyn\System.Security.Cryptography.Encoding.dll
+C:\Users\Ezequiel\source\repos\AteneaMotors\AteneaWeb1\bin\roslyn\System.Security.Cryptography.Primitives.dll
+C:\Users\Ezequiel\source\repos\AteneaMotors\AteneaWeb1\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+C:\Users\Ezequiel\source\repos\AteneaMotors\AteneaWeb1\bin\roslyn\System.Text.Encoding.CodePages.dll
+C:\Users\Ezequiel\source\repos\AteneaMotors\AteneaWeb1\bin\roslyn\System.Threading.Tasks.Extensions.dll
+C:\Users\Ezequiel\source\repos\AteneaMotors\AteneaWeb1\bin\roslyn\System.ValueTuple.dll
+C:\Users\Ezequiel\source\repos\AteneaMotors\AteneaWeb1\bin\roslyn\System.Xml.ReaderWriter.dll
+C:\Users\Ezequiel\source\repos\AteneaMotors\AteneaWeb1\bin\roslyn\System.Xml.XmlDocument.dll
+C:\Users\Ezequiel\source\repos\AteneaMotors\AteneaWeb1\bin\roslyn\System.Xml.XPath.dll
+C:\Users\Ezequiel\source\repos\AteneaMotors\AteneaWeb1\bin\roslyn\System.Xml.XPath.XDocument.dll
+C:\Users\Ezequiel\source\repos\AteneaMotors\AteneaWeb1\bin\roslyn\vbc.exe
+C:\Users\Ezequiel\source\repos\AteneaMotors\AteneaWeb1\bin\roslyn\vbc.exe.config
+C:\Users\Ezequiel\source\repos\AteneaMotors\AteneaWeb1\bin\roslyn\vbc.rsp
+C:\Users\Ezequiel\source\repos\AteneaMotors\AteneaWeb1\bin\roslyn\VBCSCompiler.exe
+C:\Users\Ezequiel\source\repos\AteneaMotors\AteneaWeb1\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\Ezequiel\source\repos\AteneaMotors\AteneaWeb1\bin\BouncyCastle.Cryptography.dll
+C:\Users\Ezequiel\source\repos\AteneaMotors\AteneaWeb1\bin\Google.Protobuf.dll
+C:\Users\Ezequiel\source\repos\AteneaMotors\AteneaWeb1\bin\K4os.Compression.LZ4.dll
+C:\Users\Ezequiel\source\repos\AteneaMotors\AteneaWeb1\bin\K4os.Compression.LZ4.Streams.dll
+C:\Users\Ezequiel\source\repos\AteneaMotors\AteneaWeb1\bin\K4os.Hash.xxHash.dll
+C:\Users\Ezequiel\source\repos\AteneaMotors\AteneaWeb1\bin\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\Ezequiel\source\repos\AteneaMotors\AteneaWeb1\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\Ezequiel\source\repos\AteneaMotors\AteneaWeb1\bin\MySql.Data.dll
+C:\Users\Ezequiel\source\repos\AteneaMotors\AteneaWeb1\bin\System.Buffers.dll
+C:\Users\Ezequiel\source\repos\AteneaMotors\AteneaWeb1\bin\System.Configuration.ConfigurationManager.dll
+C:\Users\Ezequiel\source\repos\AteneaMotors\AteneaWeb1\bin\System.Diagnostics.DiagnosticSource.dll
+C:\Users\Ezequiel\source\repos\AteneaMotors\AteneaWeb1\bin\System.IO.Pipelines.dll
+C:\Users\Ezequiel\source\repos\AteneaMotors\AteneaWeb1\bin\System.Memory.dll
+C:\Users\Ezequiel\source\repos\AteneaMotors\AteneaWeb1\bin\System.Numerics.Vectors.dll
+C:\Users\Ezequiel\source\repos\AteneaMotors\AteneaWeb1\bin\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\Ezequiel\source\repos\AteneaMotors\AteneaWeb1\bin\System.Threading.Tasks.Extensions.dll
+C:\Users\Ezequiel\source\repos\AteneaMotors\AteneaWeb1\bin\ZstdSharp.dll
+C:\Users\Ezequiel\source\repos\AteneaMotors\AteneaWeb1\bin\BouncyCastle.Cryptography.xml
+C:\Users\Ezequiel\source\repos\AteneaMotors\AteneaWeb1\bin\Google.Protobuf.pdb
+C:\Users\Ezequiel\source\repos\AteneaMotors\AteneaWeb1\bin\Google.Protobuf.xml
+C:\Users\Ezequiel\source\repos\AteneaMotors\AteneaWeb1\bin\K4os.Compression.LZ4.xml
+C:\Users\Ezequiel\source\repos\AteneaMotors\AteneaWeb1\bin\K4os.Compression.LZ4.Streams.xml
+C:\Users\Ezequiel\source\repos\AteneaMotors\AteneaWeb1\bin\K4os.Hash.xxHash.xml
+C:\Users\Ezequiel\source\repos\AteneaMotors\AteneaWeb1\bin\Microsoft.Bcl.AsyncInterfaces.xml
+C:\Users\Ezequiel\source\repos\AteneaMotors\AteneaWeb1\bin\MySql.Data.xml
+C:\Users\Ezequiel\source\repos\AteneaMotors\AteneaWeb1\bin\System.Buffers.xml
+C:\Users\Ezequiel\source\repos\AteneaMotors\AteneaWeb1\bin\System.Diagnostics.DiagnosticSource.xml
+C:\Users\Ezequiel\source\repos\AteneaMotors\AteneaWeb1\bin\System.IO.Pipelines.xml
+C:\Users\Ezequiel\source\repos\AteneaMotors\AteneaWeb1\bin\System.Memory.xml
+C:\Users\Ezequiel\source\repos\AteneaMotors\AteneaWeb1\bin\System.Numerics.Vectors.xml
+C:\Users\Ezequiel\source\repos\AteneaMotors\AteneaWeb1\bin\System.Runtime.CompilerServices.Unsafe.xml
+C:\Users\Ezequiel\source\repos\AteneaMotors\AteneaWeb1\bin\System.Threading.Tasks.Extensions.xml
+C:\Users\Ezequiel\source\repos\AteneaMotors\AteneaWeb1\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\Ezequiel\source\repos\AteneaMotors\AteneaWeb1\obj\Debug\AteneaWeb1.csproj.CoreCompileInputs.cache
+C:\Users\Ezequiel\source\repos\AteneaMotors\AteneaWeb1\obj\Debug\AteneaWeb1.csproj.CopyComplete
+C:\Users\Ezequiel\source\repos\AteneaMotors\AteneaWeb1\obj\Debug\AteneaWeb1.dll
+C:\Users\Ezequiel\source\repos\AteneaMotors\AteneaWeb1\obj\Debug\AteneaWeb1.pdb
+>>>>>>> b7df3a1d5cdc93048e0ca84d8c819edd2bb55370

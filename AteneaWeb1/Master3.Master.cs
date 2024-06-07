@@ -31,7 +31,11 @@ namespace AteneaWeb1
 
         string connectionString = ConfigurationManager.ConnectionStrings["connectionDB"].ConnectionString;
 
+<<<<<<< HEAD
         private UsuarioInfo ObtenerUsuarioInfo(string usuario)
+=======
+        private string ObtenerNombre(string usuario)
+>>>>>>> b7df3a1d5cdc93048e0ca84d8c819edd2bb55370
         {
             using (SqlConnection connection = new SqlConnection(connectionString))
             {
