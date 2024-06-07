@@ -137,6 +137,10 @@
     <Content Include="pruebasmanejo.aspx" />
     <Content Include="pruebaUsuario.aspx" />
     <Content Include="register.aspx" />
+    <Content Include="solicitudEmpleado.aspx" />
+    <Content Include="solicitudesEmpleo.aspx" />
+    <Content Include="verResenas.aspx" />
+    <Content Include="vistaAuto.aspx" />
     <Content Include="Web.config" />
     <Content Include="default.aspx" />
   </ItemGroup>
@@ -260,6 +264,34 @@
     </Compile>
     <Compile Include="register.aspx.designer.cs">
       <DependentUpon>register.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="solicitudEmpleado.aspx.cs">
+      <DependentUpon>solicitudEmpleado.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="solicitudEmpleado.aspx.designer.cs">
+      <DependentUpon>solicitudEmpleado.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="solicitudesEmpleo.aspx.cs">
+      <DependentUpon>solicitudesEmpleo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="solicitudesEmpleo.aspx.designer.cs">
+      <DependentUpon>solicitudesEmpleo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="verResenas.aspx.cs">
+      <DependentUpon>verResenas.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="verResenas.aspx.designer.cs">
+      <DependentUpon>verResenas.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="vistaAuto.aspx.cs">
+      <DependentUpon>vistaAuto.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="vistaAuto.aspx.designer.cs">
+      <DependentUpon>vistaAuto.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>

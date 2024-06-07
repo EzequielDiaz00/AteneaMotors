@@ -18,6 +18,8 @@
     <ul>
         <li class="active"><a href="default.aspx">Inicio</a></li>
         <li><a href="catalogo.aspx">Catalogo</a></li>
+        <li style="float: right;"><a href="https://docs.google.com/forms/d/e/1FAIpQLSejyhGa0eW8RU19KDyL5eJEpBP4IPpKPNwY0sSVEOUCRsCttQ/viewform?usp=pp_url">Soporte Tecnico</a></li>
+        <li style="float: right;"><a href="solicitudEmpleado.aspx">Solicitar Empleo</a></li>
         <li style="float: right;"><a href="cotizar.aspx">Cotizar</a></li>
         <li style="float: right;"><a href="login.aspx">Login</a></li>
     </ul>

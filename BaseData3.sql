@@ -23,7 +23,7 @@ create table UsuarioAdmin (
 select * from UsuarioAdmin;
 
 insert into UsuarioAdmin (usuario, contrasena)
-values ('admin', 'admin');
+values ('admin', 'admin2020');
 
 
 select * from DatosUsuario;

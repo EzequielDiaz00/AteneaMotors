@@ -1,3 +1,5 @@
+create database AteneaMotors;
+
 use AteneaMotors;
 
 CREATE TABLE Autos (

@@ -2,23 +2,7 @@
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
     <style>
-        .btnc2 {
-            text-decoration: blink;
-            text-align: center;
-            display: flex;
-            width: 250px;
-            margin-left: auto;
-            margin-right: auto;
-            font-family: Verdana;
-            font-size: 30px;
-            border: none;
-            color: white;
-            background-color: #E1523D;
-        }
-
-            .btnc2:hover {
-                background-color: #C2BB00;
-            }
+        
     </style>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
@@ -78,6 +62,11 @@
                         <p class="txtcat2">Color: <%# Eval("Color") %></p>
                         <br />
                         <a class="btnc2" href="pruebaUsuario.aspx">Solicitar prueba de manejo</a>
+                        <br />
+                        <!-- Botón para redirigir a vistaUsuario -->
+                        <asp:Button runat="server" Text="Añadir reseña" CssClass="btnc2" OnClick="btnAgregarReseña_Click" CommandArgument='<%# Eval("ID") %>' />
+                        <br />
+                        <br />
                     </div>
                     <div class="divcat3">
                         <img class="imgcat1" style="width: 100%;" src='<%# Eval("ImagenUrl") %>' alt='<%# Eval("Nombre") %>' />

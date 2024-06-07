@@ -22,6 +22,8 @@
             <li><a href="catalogoUsuario.aspx">Catalogo</a></li>
             <li style="float: right;"><asp:Button CssClass="btnCS" Text="Cerrar sesion" runat="server" OnClick="cerrarSesion_Click"/></li>
             <li style="float: right;" class="active"><a href="#"><%= Session["NombreUsuario"] %></a></li>
+            <li style="float: right;"><a href="https://docs.google.com/forms/d/e/1FAIpQLSejyhGa0eW8RU19KDyL5eJEpBP4IPpKPNwY0sSVEOUCRsCttQ/viewform?usp=pp_url">Soporte Tecnico</a></li>
+            <li style="float: right;"><a href="solicitudEmpleado.aspx">Solicitar Empleo</a></li>
         </ul>
         <div>
             <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">

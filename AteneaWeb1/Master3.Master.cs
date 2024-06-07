@@ -1,11 +1,7 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.Configuration;
 using System.Data.SqlClient;
-using System.Linq;
 using System.Web;
-using System.Web.UI;
-using System.Web.UI.WebControls;
 
 namespace AteneaWeb1
 {
@@ -22,23 +18,28 @@ namespace AteneaWeb1
             {
                 if (Session["usuario"] != null)
                 {
+                    UsuarioInfo usuarioInfo = ObtenerUsuarioInfo((string)Session["usuario"]);
 
-                    string nombreUsuario = ObtenerNombre((string)Session["usuario"]);
-
-                    Session["NombreUsuario"] = nombreUsuario;
+                    if (usuarioInfo != null)
+                    {
+                        Session["NombreUsuario"] = usuarioInfo.Nombre;
+                        Session["IDUsuario"] = usuarioInfo.ID;
+                    }
                 }
             }
         }
+
         string connectionString = ConfigurationManager.ConnectionStrings["connectionDB"].ConnectionString;
-        private string ObtenerNombre(string usuario)
+
+        private UsuarioInfo ObtenerUsuarioInfo(string usuario)
         {
             using (SqlConnection connection = new SqlConnection(connectionString))
             {
                 connection.Open();
 
-                string query = "SELECT usuario FROM DatosdeRegistrados WHERE usuario = @usuario;";
+                string query = "SELECT ID, usuario FROM DatosdeRegistrados WHERE usuario = @usuario;";
                 SqlCommand command = new SqlCommand(query, connection);
-                command.Parameters.AddWithValue("@usuario", HttpContext.Current.Session["usuario"]);
+                command.Parameters.AddWithValue("@usuario", usuario);
 
                 try
                 {
@@ -46,7 +47,12 @@ namespace AteneaWeb1
 
                     if (reader.Read())
                     {
-                        return reader["usuario"].ToString();
+                        UsuarioInfo usuarioInfo = new UsuarioInfo
+                        {
+                            ID = Convert.ToInt32(reader["ID"]),
+                            Nombre = reader["usuario"].ToString()
+                        };
+                        return usuarioInfo;
                     }
                     else
                     {
@@ -55,19 +61,26 @@ namespace AteneaWeb1
                 }
                 catch (Exception ex)
                 {
-
+                    // Manejar cualquier excepción que pueda ocurrir
+                    Console.WriteLine("Error al obtener información del usuario: " + ex.Message);
                     return null;
                 }
             }
-
         }
-
 
         protected void cerrarSesion_Click(object sender, EventArgs e)
         {
             Session.Remove("ConnectionString");
             Session.Remove("usuario");
+            Session.Remove("NombreUsuario");
+            Session.Remove("IDUsuario");
             Response.Redirect("default.aspx");
         }
+    }
+
+    public class UsuarioInfo
+    {
+        public int ID { get; set; }
+        public string Nombre { get; set; }
     }
 }

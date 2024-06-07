@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Configuration;
 using System.Data;
 using System.Data.SqlClient;
+using System.Web.UI.WebControls;
 
 namespace AteneaWeb1
 {
@@ -33,7 +34,7 @@ namespace AteneaWeb1
 
             string connectionString = ConfigurationManager.ConnectionStrings["connectionDB"].ConnectionString;
 
-            string query = "SELECT Nombre, Descripcion, Anio, Color, ImagenUrl, Tipo FROM Autos";
+            string query = "SELECT ID, Nombre, Descripcion, Anio, Color, ImagenUrl, Tipo FROM Autos";
 
             using (SqlConnection connection = new SqlConnection(connectionString))
             {
@@ -56,6 +57,16 @@ namespace AteneaWeb1
                     Console.WriteLine("Error: " + ex.Message);
                 }
             }
+        }
+
+        protected void btnAgregarReseña_Click(object sender, EventArgs e)
+        {
+            // Obtener el ID del auto desde el botón que generó el evento
+            Button btn = (Button)sender;
+            int idAuto = Convert.ToInt32(btn.CommandArgument);
+
+            // Redirigir a vistaUsuario.aspx con el ID del auto en la URL
+            Response.Redirect("vistaAuto.aspx?idAuto=" + idAuto);
         }
 
         protected void btnFiltrar_Click(object sender, EventArgs e)

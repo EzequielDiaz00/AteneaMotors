@@ -39,5 +39,15 @@ namespace AteneaWeb1
         {
             Response.Redirect("pruebasmanejo.aspx");
         }
+
+        protected void SolicitudEmpleo_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("solicitudesEmpleo.aspx");
+        }
+
+        protected void RevisarResenas_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("verResenas.aspx");
+        }
     }
 }
